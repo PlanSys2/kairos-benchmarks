@@ -1,0 +1,8 @@
+(define (problem charger-1-3) (:domain charger-tif)
+  (:objects r0 - robot t0 t1 t2 - task)
+  (:init (free) (= (power) 0)
+    (= (energy r0) 0)
+    (= (need t0) 5)
+    (= (need t1) 5)
+    (= (need t2) 10))
+  (:goal (and (done t0) (done t1) (done t2))))

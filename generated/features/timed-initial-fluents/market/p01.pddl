@@ -1,0 +1,5 @@
+(define (problem market-1) (:domain market-tif)
+  (:objects i0 - item)
+  (:init (= (money) 12)
+    (= (price i0) 72) (at 3 (= (price i0) 12)) (at 6 (= (price i0) 72)))
+  (:goal (and (owned i0))))

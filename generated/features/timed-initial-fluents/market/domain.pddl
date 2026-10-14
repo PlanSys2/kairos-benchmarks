@@ -1,0 +1,10 @@
+(define (domain market-tif)
+  (:requirements :typing :durative-actions :numeric-fluents :timed-initial-literals)
+  (:types item)
+  (:predicates (owned ?i - item))
+  (:functions (price ?i - item) (money))
+  (:durative-action buy
+    :parameters (?i - item)
+    :duration (= ?duration 1)
+    :condition (and (at start (<= (price ?i) (money))))
+    :effect (and (at start (decrease (money) (price ?i))) (at end (owned ?i)))))

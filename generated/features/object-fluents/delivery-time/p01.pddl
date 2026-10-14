@@ -1,0 +1,8 @@
+(define (problem delivery-1-1-3) (:domain delivery-of-time)
+  (:objects r0 - robot l0 l1 l2 - location p0 - package)
+  (:init (idle r0) (= (dist l0 l1) 8) (= (dist l1 l0) 8) (= (dist l1 l2) 6) (= (dist l2 l1) 6)
+    (connected l0 l1) (connected l1 l0) (connected l1 l2) (connected l2 l1)
+    (= (loc r0) l0)
+    (= (pos p0) l2))
+  (:metric minimize (total-time))
+  (:goal (and (= (pos p0) l0))))

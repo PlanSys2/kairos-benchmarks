@@ -1,0 +1,8 @@
+(define (problem keys-3) (:domain keys-of)
+  (:objects bot - robot room0 room1 room2 - room d0 d1 - door k0 k1 - key)
+  (:init (= (in bot) room0)
+    (joins d0 room0 room1) (joins d0 room1 room0) (= (opens d0) k0)
+    (= (key-at k0) room0)
+    (joins d1 room1 room2) (joins d1 room2 room1) (= (opens d1) k1)
+    (= (key-at k1) room0))
+  (:goal (= (in bot) room2)))

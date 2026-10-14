@@ -1,0 +1,10 @@
+(define (domain traffic-tif)
+  (:requirements :typing :durative-actions :numeric-fluents :timed-initial-literals)
+  (:types car place)
+  (:predicates (at ?c - car ?p - place) (road ?a ?b - place) (open-window))
+  (:functions (travel ?a ?b - place))
+  (:durative-action drive
+    :parameters (?c - car ?a ?b - place)
+    :duration (= ?duration (travel ?a ?b))
+    :condition (and (at start (at ?c ?a)) (over all (road ?a ?b)) (over all (open-window)))
+    :effect (and (at start (not (at ?c ?a))) (at end (at ?c ?b)))))

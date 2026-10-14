@@ -1,0 +1,15 @@
+(define (domain charger-tif)
+  (:requirements :typing :durative-actions :numeric-fluents :timed-initial-literals)
+  (:types robot task)
+  (:predicates (done ?t - task) (free))
+  (:functions (energy ?r - robot) (power) (need ?t - task))
+  (:durative-action charge
+    :parameters (?r - robot)
+    :duration (= ?duration 2)
+    :condition (and (at start (free)) (over all (>= (power) 5)))
+    :effect (and (at start (not (free))) (at end (free)) (at end (increase (energy ?r) 10))))
+  (:durative-action work
+    :parameters (?r - robot ?t - task)
+    :duration (= ?duration 3)
+    :condition (and (at start (>= (energy ?r) (need ?t))))
+    :effect (and (at start (decrease (energy ?r) (need ?t))) (at end (done ?t)))))

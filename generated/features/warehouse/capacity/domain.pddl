@@ -1,0 +1,26 @@
+(define (domain warehouse-capacity)
+  (:requirements :typing :negative-preconditions :numeric-fluents :action-costs)
+  (:types robot pod item zone - object station - zone)
+  (:predicates (aisle ?a ?b - zone) (at ?r - robot ?z - zone) (pod-at ?p - pod ?z - zone)
+               (lifting ?r - robot ?p - pod) (empty ?r - robot) (has ?p - pod ?i - item)
+               (home ?p - pod ?z - zone) (delivered ?i - item ?s - station)
+               (order ?i - item ?s - station))
+  (:functions (robots-in ?z - zone) (capacity ?z - zone) (total-cost))
+  (:action move
+    :parameters (?r - robot ?a ?b - zone)
+    :precondition (and (at ?r ?a) (aisle ?a ?b) (< (robots-in ?b) (capacity ?b)))
+    :effect (and (not (at ?r ?a)) (at ?r ?b) (decrease (robots-in ?a) 1)
+                 (increase (robots-in ?b) 1) (increase (total-cost) 1)))
+  (:action lift
+    :parameters (?r - robot ?p - pod ?z - zone)
+    :precondition (and (at ?r ?z) (pod-at ?p ?z) (empty ?r))
+    :effect (and (not (pod-at ?p ?z)) (not (empty ?r)) (lifting ?r ?p)
+                 (increase (total-cost) 1)))
+  (:action lower
+    :parameters (?r - robot ?p - pod ?z - zone)
+    :precondition (and (at ?r ?z) (lifting ?r ?p) (home ?p ?z))
+    :effect (and (pod-at ?p ?z) (empty ?r) (not (lifting ?r ?p)) (increase (total-cost) 1)))
+  (:action pick
+    :parameters (?r - robot ?p - pod ?i - item ?s - station)
+    :precondition (and (at ?r ?s) (lifting ?r ?p) (has ?p ?i) (order ?i ?s))
+    :effect (and (delivered ?i ?s) (not (has ?p ?i)) (increase (total-cost) 1))))

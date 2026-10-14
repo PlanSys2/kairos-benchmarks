@@ -1,0 +1,9 @@
+# name	url	commit
+potassco-pddl-instances	https://github.com/potassco/pddl-instances	cf19edf7c53d1540ddbb396c642595e0926ee552
+ipc2023-classical	https://github.com/ipc2023-classical/ipc2023-dataset	1e29a0e38112263df7b48be677c0ca4337295bbe
+ipc2023-numeric	https://github.com/ipc2023-numeric/ipc2023-dataset	0799944d7135ceff9d4b504db8f4ee15ffb7c9fc
+ipc2026-numeric	https://github.com/ipc2026-numeric/ipc2026-dataset	85195dbbcccd90ef6359605e43baf7ceb4b5a786
+hstairs-pddl-plus-domains	https://github.com/hstairs/pddl_plus_domains	23a8b790c947e69488452a308ba75d1d17a7fde1
+hstairs-time2processes	https://github.com/hstairs/time2processes	7197802b47cd17b8d7b4c3a042e49648cda6cc2a
+htg-domains	https://github.com/abcorrea/htg-domains	c5670ed289f58d3d6e104d7b06f311cf2f87b354
+smtplan	https://github.com/KCL-Planning/SMTPlan	b085bd7ab05230275075d232f4d218f691ab9eab

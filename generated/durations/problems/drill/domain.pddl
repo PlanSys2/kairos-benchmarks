@@ -1,0 +1,15 @@
+(define (domain drill)
+(:requirements :typing :fluents :durative-actions :duration-inequalities)
+(:types hole)
+(:predicates (planned ?h - hole) (drilled ?h - hole) (bit_free))
+(:functions (depth ?h - hole) (rate) (min_depth ?h - hole) (max_depth ?h - hole))
+(:durative-action drill
+  :parameters (?h - hole)
+  :duration (and (>= ?duration 1) (<= ?duration 60))
+  :condition (and (at start (planned ?h)) (at start (bit_free)))
+  :effect (and (at start (not (planned ?h))) (at start (not (bit_free))) (at end (bit_free))
+               (increase (depth ?h) (* #t (rate)))))
+(:action check
+  :parameters (?h - hole)
+  :precondition (and (bit_free) (>= (depth ?h) (min_depth ?h)) (<= (depth ?h) (max_depth ?h)))
+  :effect (drilled ?h)))

@@ -1,0 +1,6 @@
+(define (problem delivery-1-1-3) (:domain delivery-of)
+  (:objects r0 - robot l0 l1 l2 - location p0 - package)
+  (:init (connected l0 l1) (connected l1 l0) (connected l1 l2) (connected l2 l1)
+    (= (loc r0) l0)
+    (= (pos p0) l1))
+  (:goal (and (= (pos p0) l0))))
