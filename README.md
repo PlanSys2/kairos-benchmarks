@@ -58,8 +58,11 @@ inside it, and their sha256.
 | `generated/plansys2-scale` | (generator) | Domains of PlanSys2 packages with problems from ~10 to ~20 000 objects and a reference plan each (`gen.py OUT_DIR`) |
 | `generated/combat` | 56 | PlanSys2's two-army robot battle: required concurrency, costs in euros, resources, and minimal problems that isolate planner failures |
 
-`generated/features/expected.tsv` says for each generated problem whether it has a plan. The
-generators are deterministic (seeded): running `gen.py OUT_DIR` again writes the same files.
+`generated/features/expected.tsv` says for each generated problem whether it has a plan; in
+each family the last problem is the one without (a station cut off, a key behind its own door,
+money one unit short...). The warehouse problems come with a reference plan (`pNN.plan`),
+built along with the problem, that proves they have one. The generators are deterministic
+(seeded): running `gen.py OUT_DIR` again writes the same files.
 
 ## Using it
 

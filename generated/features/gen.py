@@ -22,26 +22,36 @@ for each problem whether it has a plan (each family has unsolvable problems too:
 that says "unsolvable" on a solvable one, or prints a plan for an unsolvable one, is wrong).
 """
 
+import collections
 import json
 import os
 import random
+import re
 import sys
 
 MANIFEST = []
 
 
 def write(out, feature, family, domain, problems):
+    """problems: (text, solvable) or (text, solvable, reference plan)."""
     folder = os.path.join(out, feature, family)
     os.makedirs(folder, exist_ok=True)
     with open(os.path.join(folder, 'domain.pddl'), 'w') as fh:
         fh.write(domain)
-    for i, (text, solvable) in enumerate(problems, 1):
+    for i, item in enumerate(problems, 1):
+        text, solvable = item[0], item[1]
         name = 'p%02d.pddl' % i
         with open(os.path.join(folder, name), 'w') as fh:
             fh.write(text)
+        plan = None
+        if len(item) > 2 and item[2]:
+            plan = os.path.join(folder, 'p%02d.plan' % i)
+            with open(plan, 'w') as fh:
+                fh.write(item[2])
         MANIFEST.append({'feature': feature, 'family': family,
                          'domain': os.path.join(folder, 'domain.pddl'),
-                         'problem': os.path.join(folder, name), 'solvable': solvable})
+                         'problem': os.path.join(folder, name), 'solvable': solvable,
+                         'plan': plan})
 
 
 def line(names, rel):
@@ -517,15 +527,15 @@ def warehouse(rng, level, robots, solvable, temporal=False):
     for r in range(robots):
         z = start[r]
         if level == 'cells':
-            z = next(c for c in free if c not in occupied)
+            # Away from the column next to the stations (a robot there would block one)
+            z = next(c for c in free if c not in occupied and not c.startswith('z1_'))
             occupied.add(z)
         init.append('(at r%d %s) (empty r%d)' % (r, z, r))
         if temporal:
             init.append('(idle r%d) (= (speed r%d) %d) (= (battery r%d) 1000)' % (
                 r, r, rng.choice((1, 2)), r))
     if level == 'cells':
-        init += ['(clear %s)' % c for c in list(grid.values()) if c not in occupied
-                 and c not in walls]
+        init += ['(clear %s)' % c for c in list(grid.values()) if c not in occupied]
     if level == 'capacity':
         count = {}
         for r in range(robots):
@@ -547,7 +557,24 @@ def warehouse(rng, level, robots, solvable, temporal=False):
         init.append('(= (total-cost) 0)')
     domain = 'warehouse-time' if temporal else 'warehouse-' + level
     metric = '(:metric minimize (total-time))' if temporal else '(:metric minimize (total-cost))'
-    return '''(define (problem wh-%s-%d) (:domain %s)
+    plan = None
+    if solvable:
+        lengths = {}
+        for line in init:
+            for a, b, d in re.findall(r'\(= \(length (\S+) (\S+)\) (\d+)\)', line):
+                lengths[(a, b)] = int(d)
+        speeds = {int(r): int(v) for r, v in
+                  re.findall(r'\(= \(speed r(\d+)\) (\d+)\)', ' '.join(init))}
+        orders_of = re.findall(r'\(has pod(\d+) it(\d+)\) \(order it\d+ (\S+)\)',
+                               ' '.join(init))
+        robot_at = re.findall(r'\(at r(\d+) (\S+)\)', ' '.join(init))
+        caps = {z: (int(n), int(c)) for z, n, c in re.findall(
+            r'\(= \(robots-in (\S+)\) (\d+)\) \(= \(capacity \S+\) (\d+)\)', ' '.join(init))}
+        plan = warehouse_plan(level, temporal, aisles, pod_zone,
+                              {int(r): z for r, z in robot_at},
+                              [(int(p), int(i), s) for p, i, s in orders_of],
+                              caps, lengths, speeds)
+    text = '''(define (problem wh-%s-%d) (:domain %s)
   (:objects %s - robot %s - zone %s - station %s - pod %s - item)
   (:init %s)
   (:goal (and %s))
@@ -556,6 +583,85 @@ def warehouse(rng, level, robots, solvable, temporal=False):
        ' '.join('r%d' % i for i in range(robots)), ' '.join(names), ' '.join(stations),
        ' '.join('pod%d' % i for i in range(pods)), ' '.join('it%d' % i for i in range(orders)),
        '\n    '.join(init), ' '.join(goal), metric)
+    return text, solvable, plan
+
+
+def warehouse_plan(level, temporal, aisles, pod_zone, robot_at, orders, caps, lengths, speeds):
+    """A plan by construction (it proves the problem has one): order after order, a robot goes
+    to the pod, lifts it, brings it to the station, picks, returns it home and lowers it; one
+    robot moves at a time, along a shortest path that respects capacities or free cells."""
+    adj = collections.defaultdict(list)
+    for a, b in aisles:
+        adj[a].append(b)
+        adj[b].append(a)
+    pos = dict(robot_at)
+    count = collections.Counter(pos.values())
+    steps = []
+
+    def can_enter(z):
+        if level == 'capacity':
+            return count[z] < caps[z][1]
+        if level == 'cells':
+            return count[z] == 0
+        return True
+
+    def path(src, dst):
+        prev = {src: None}
+        queue = collections.deque([src])
+        while queue:
+            z = queue.popleft()
+            if z == dst:
+                out = []
+                while prev[z] is not None:
+                    out.append(z)
+                    z = prev[z]
+                return out[::-1]
+            for n in adj[z]:
+                if n not in prev and can_enter(n):
+                    prev[n] = z
+                    queue.append(n)
+        return None
+
+    def go(r, dst):
+        route = path(pos[r], dst)
+        if route is None:
+            return False
+        for z in route:
+            steps.append(('move', 'r%d' % r, pos[r], z))
+            count[pos[r]] -= 1
+            count[z] += 1
+            pos[r] = z
+        return True
+
+    home = dict(enumerate(pod_zone))
+    for k, (p, item, station) in enumerate(orders):
+        robots = sorted(pos, key=lambda r: (r - k) % len(pos))
+        for r in robots:
+            mark = len(steps), dict(pos), collections.Counter(count)
+            if (go(r, home[p]) and steps.append(('lift', 'r%d' % r, 'pod%d' % p, home[p])) is None
+                    and go(r, station) and
+                    steps.append(('pick', 'r%d' % r, 'pod%d' % p, 'it%d' % item, station)) is None
+                    and go(r, home[p])):
+                steps.append(('lower', 'r%d' % r, 'pod%d' % p, home[p]))
+                break
+            del steps[mark[0]:]
+            pos.clear()
+            pos.update(mark[1])
+            count.clear()
+            count.update(mark[2])
+        else:
+            raise RuntimeError('no robot can serve order it%d' % item)
+    if not temporal:
+        return ''.join('(%s)\n' % ' '.join(s) for s in steps)
+    out, now = [], 0.0
+    for s in steps:
+        if s[0] == 'move':
+            d = lengths[(s[2], s[3])] / speeds[int(s[1][1:])]
+        else:
+            d = 3.0 if s[0] == 'pick' else 2.0
+        out.append('%.3f: (%s) [%.3f]\n' % (now, ' '.join(s), d))
+        now += d + 0.01
+    return ''.join(out)
 
 
 def main():
@@ -590,12 +696,11 @@ def main():
             ('capacity', WAREHOUSE_CAPACITY, (5, 20, 50, 100, 200, 400)),
             ('cells', WAREHOUSE_CELLS, (2, 4, 8, 12, 16, 24))):
         write(out, 'warehouse', level, domain,
-              [(warehouse(rng, level, n, True), True) for n in sizes] +
-              [(warehouse(rng, level, sizes[1], False), False)])
+              [warehouse(rng, level, n, True) for n in sizes] +
+              [warehouse(rng, level, sizes[1], False)])
     write(out, 'warehouse', 'time', WAREHOUSE_TIME,
-          [(warehouse(rng, 'free', n, True, temporal=True), True)
-           for n in (5, 20, 50, 100, 200)] +
-          [(warehouse(rng, 'free', 20, False, temporal=True), False)])
+          [warehouse(rng, 'free', n, True, temporal=True) for n in (5, 20, 50, 100, 200)] +
+          [warehouse(rng, 'free', 20, False, temporal=True)])
     with open(os.path.join(out, 'manifest.json'), 'w') as fh:
         json.dump(MANIFEST, fh, indent=1)
     print('%d problems' % len(MANIFEST))
