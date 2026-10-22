@@ -25,6 +25,7 @@ article.
 | Path | Content |
 |---|---|
 | `bench/results/paper/kairos_SUITE.csv`, `.log` | Kairos 1.0.6 on each suite (`paper_battery.sh main`) |
+| `bench/results/paper/battery.out` | the summary of the runs; its "kairos 1.0.0" lines are the version printed by a shell whose `LD_LIBRARY_PATH` found an older library, which the runs did not use (they run with `LD_LIBRARY_PATH` unset and load the 1.0.6 library next to the binary; `paper_battery.sh` now prints the version the same way) |
 | `bench/results/paper/{m2,m3,ff,lama,...}_SUITE.csv` | the ablation runs (`paper_battery.sh ablation`) |
 | `bench/results/paper/*_probes.csv` | the support probes, every planner (`paper_battery.sh support`) |
 | `bench/results/paper/plans_*` | the plans of those runs, one file per problem (anytime runs keep every plan; the last one counts) |
