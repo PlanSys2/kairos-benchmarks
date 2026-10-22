@@ -9,7 +9,7 @@
 | domain | solved | agile |
 |---|---|---|
 | b6/charging/L | 2/3 | 2.00 |
-| b6/charging/M | 3/3 | 2.76 |
+| b6/charging/M | 3/3 | 2.79 |
 | b6/charging/S | 3/3 | 3.00 |
 | b6/charging/XL | 0/3 | 0.00 |
 | b6/charging/XS | 3/3 | 3.00 |
@@ -17,17 +17,17 @@
 | b6/cooking/L | 3/3 | 3.00 |
 | b6/cooking/M | 3/3 | 3.00 |
 | b6/cooking/S | 3/3 | 3.00 |
-| b6/cooking/XL | 3/3 | 2.25 |
+| b6/cooking/XL | 3/3 | 2.23 |
 | b6/cooking/XS | 3/3 | 3.00 |
 | b6/cooking/XXL | 0/3 | 0.00 |
-| b6/elevator/L | 3/3 | 0.09 |
+| b6/elevator/L | 3/3 | 0.12 |
 | b6/elevator/M | 3/3 | 3.00 |
 | b6/elevator/S | 3/3 | 3.00 |
 | b6/elevator/XL | 0/3 | 0.00 |
 | b6/elevator/XS | 3/3 | 3.00 |
 | b6/elevator/XXL | 0/3 | 0.00 |
 | b6/factory/L | 0/3 | 0.00 |
-| b6/factory/M | 1/3 | 0.31 |
+| b6/factory/M | 1/3 | 0.25 |
 | b6/factory/S | 3/3 | 3.00 |
 | b6/factory/XL | 0/3 | 0.00 |
 | b6/factory/XS | 3/3 | 3.00 |
@@ -39,7 +39,7 @@
 | b6/patrol/XS | 3/3 | 3.00 |
 | b6/patrol/XXL | 0/3 | 0.00 |
 | b6/road_trip/L | 0/3 | 0.00 |
-| b6/road_trip/M | 3/3 | 2.70 |
+| b6/road_trip/M | 3/3 | 2.65 |
 | b6/road_trip/S | 3/3 | 3.00 |
 | b6/road_trip/XL | 0/3 | 0.00 |
 | b6/road_trip/XS | 3/3 | 3.00 |
@@ -47,7 +47,7 @@
 | b6/simple/L | 3/3 | 3.00 |
 | b6/simple/M | 3/3 | 3.00 |
 | b6/simple/S | 3/3 | 3.00 |
-| b6/simple/XL | 3/3 | 1.43 |
+| b6/simple/XL | 2/3 | 1.06 |
 | b6/simple/XS | 3/3 | 3.00 |
 | b6/simple/XXL | 0/3 | 0.00 |
 | b6/suave/L | 3/3 | 3.00 |
@@ -56,4 +56,4 @@
 | b6/suave/XL | 0/3 | 0.00 |
 | b6/suave/XS | 3/3 | 3.00 |
 | b6/suave/XXL | 0/3 | 0.00 |
-| **total** | **93/144** | **86.53** |
+| **total** | **92/144** | **86.08** |

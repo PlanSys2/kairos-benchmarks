@@ -1,18 +1,18 @@
 #!/bin/bash
-# The ICAPS paper's runs: Kairos 1.0.0 (installed apart, so rebuilds do not touch it) on every
+# The article's runs: Kairos 1.0.6 (installed apart, so rebuilds do not touch it) on every
 # suite with the limits of the other planners' runs, then the ablations the CLI allows.
 #   bench/paper_battery.sh [OUT_DIR] [support|main|validator|ablation|all]   (from planner_ws)
 cd "$(dirname "$0")/.."
 R=${1:-bench/results/paper}; WHAT=${2:-all}; mkdir -p $R
 P=$PWD/$R/install
 if [ ! -x $P/bin/kairos ]; then
-  git -C src/kairos describe --tags --exact-match HEAD | grep -qx 1.0.0 || {
-    echo "src/kairos is not at 1.0.0"; exit 1; }
+  git -C src/kairos describe --tags --exact-match HEAD | grep -qx 1.0.6 || {
+    echo "src/kairos is not at 1.0.6"; exit 1; }
   env -u LD_LIBRARY_PATH cmake --install src/kairos/build-release --prefix $P > $R/install.log 2>&1 || {
     echo "install failed"; tail $R/install.log; exit 1; }
 fi
 K=$P/bin/kairos
-$K --version
+env -u LD_LIBRARY_PATH $K --version
 run() {  # NAME SUITE TIMEOUT MEMORY [KAIROS ARGS...]
   local name=$1 suite=$2 t=$3 m=$4; shift 4
   local s=$(date +%s)

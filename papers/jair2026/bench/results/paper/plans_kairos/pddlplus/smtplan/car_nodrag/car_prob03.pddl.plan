@@ -1,7 +1,7 @@
-; cost = 11
-; makespan = 11.000
+; cost = 15.4
+; makespan = 15.400
 0.000: (accelerate) [0.000]
-5.500: (decelerate) [0.000]
-5.500: (decelerate) [0.000]
-11.000: (stop) [0.000]
-11.000: @PlanEND
+7.700: (decelerate) [0.000]
+7.700: (decelerate) [0.000]
+15.400: (stop) [0.000]
+15.400: @PlanEND

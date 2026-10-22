@@ -1,8 +1,0 @@
-0.000: (refuel gen tank7) [10.001]
-0.001: (refuel gen tank6) [10.001]
-10.003: (refuel gen tank5) [10.000]
-20.004: (refuel gen tank4) [10.000]
-30.005: (refuel gen tank3) [10.000]
-40.006: (refuel gen tank2) [10.000]
-50.007: (refuel gen tank1) [10.000]
-60.008: (generate gen) [1000.000]

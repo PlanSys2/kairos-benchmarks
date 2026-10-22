@@ -24,13 +24,13 @@ article.
 
 | Path | Content |
 |---|---|
-| `bench/results/paper/kairos_SUITE.csv`, `.log` | Kairos 1.0.0 on each suite (`paper_battery.sh main`) |
+| `bench/results/paper/kairos_SUITE.csv`, `.log` | Kairos 1.0.6 on each suite (`paper_battery.sh main`) |
 | `bench/results/paper/{m2,m3,ff,lama,...}_SUITE.csv` | the ablation runs (`paper_battery.sh ablation`) |
 | `bench/results/paper/*_probes.csv` | the support probes, every planner (`paper_battery.sh support`) |
 | `bench/results/paper/plans_*` | the plans of those runs, one file per problem (anytime runs keep every plan; the last one counts) |
 | `bench/results/{sota,f0,htg,pddlplus,prefs,durations,b6,features,quantum,step31}` | the other planners' runs, and Kairos's development runs that `paper_tables.py` reads |
-| `bench/results/paper/val_compare_fixed.csv` | Kairos's validator (1.0.6) and VAL on every plan of Kairos and its broken variants (Section Q4 of the article) |
-| `bench/results/paper/val_compare_fixed.csv.d` | those plans: `ID.plan` as Kairos's validator read it, `ID.val.plan` as VAL read it (no `@PlanEND`), and `manifest.tsv` with the domain and problem of each ID |
+| `bench/results/paper/val_compare.csv` | Kairos's validator and VAL on every plan of Kairos and its broken variants (Section Q4 of the article) |
+| `bench/results/paper/val_compare.csv.d` | those plans: `ID.plan` as Kairos's validator read it, `ID.val.plan` as VAL read it (no `@PlanEND`), and `manifest.tsv` with the domain and problem of each ID |
 | `bench/results/paper/val_compare_probes.csv` | the same on the probes |
 | `bench/probes` | the 26 one-feature probes of the support table |
 | `bench/planutils`, `bench/sota`, `bench/up` | Dockerfiles of the containers of the other planners (planutils, planners built from source at pinned commits, Unified Planning's TAMER and Aries) |
@@ -38,17 +38,17 @@ article.
 
 ## The disagreements with VAL
 
-The IDs below index `val_compare_fixed.csv` (row number, from 0) and the files of
-`val_compare_fixed.csv.d`. `manifest.tsv` gives the domain and problem of each, under the
+The IDs below index `val_compare.csv` (row number, from 0) and the files of
+`val_compare.csv.d`. `manifest.tsv` gives the domain and problem of each, under the
 corpus that `tools/fetch_corpus.sh` of the Kairos repository downloads.
 
 | IDs | Problem | Plan | Kairos | VAL | Why |
 |---|---|---|---|---|---|
-| 2077–2098, 2675–2684 (13) | car_nodrag (SMTPlan), PDDL+ suite and feature bank | Kairos's plan | valid | invalid | Two `decelerate` steps at the same instant. Applied in order (ENHSP's convention) they are valid; VAL evaluates both on the state before and rejects them as mutex. A difference of convention. |
-| 562 | sugar pfile15 (IPC 2023 numeric) | a step removed | invalid | valid | Step 11 needs `(> (in-storage brand1 mill3) 0)`, which is 0. |
-| 754, 758, 760, 762 | petri-net prob08-3, prob09-3, prob10-1, prob10-3 (IPC 2026 numeric) | a step removed | invalid | valid | A later step needs `(> (value ?p) 0)`, which is 0. |
-| 1658 | tpp-metric-time-constraints instance-13 (IPC 2006) | Kairos's plan | valid | invalid | VAL reports `(sometime-before (> (stored goods2) 0) ...)` as violated at time 0, where `(stored goods2)` is 0; goods2 is first stored at 2699.013. |
-| 2985, 2987 | tpp-metric-time-constraints instance-15 (IPC 2006, feature bank) | Kairos's plan, and a step moved | valid | invalid | The same, with goods1, first stored at 8053.036. |
+| 2081–2102, 2682–2691 (13) | car_nodrag (SMTPlan), PDDL+ suite and feature bank | Kairos's plan | valid | invalid | Two `decelerate` steps at the same instant. Applied in order (ENHSP's convention) they are valid; VAL evaluates both on the state before and rejects them as mutex. A difference of convention. |
+| 564 | sugar pfile15 (IPC 2023 numeric) | a step removed | invalid | valid | Step 11 needs `(> (in-storage brand1 mill3) 0)`, which is 0. |
+| 756, 760, 762, 764 | petri-net prob08-3, prob09-3, prob10-1, prob10-3 (IPC 2026 numeric) | a step removed | invalid | valid | A later step needs `(> (value ?p1) 0)`, which is 0. |
+| 1663 | tpp-metric-time-constraints instance-13 (IPC 2006) | Kairos's plan | valid | invalid | VAL reports `(sometime-before (> (stored goods2) 0) ...)` as violated at time 0, where `(stored goods2)` is 0; goods2 is first stored at 2699.013. |
+| 2992, 2994 | tpp-metric-time-constraints instance-15 (IPC 2006, feature bank) | Kairos's plan, and a step moved | valid | invalid | The same, with goods1, first stored at 8053.036. |
 
 To check one: `kairos validate DOMAIN PROBLEM ID.plan` prints the failing step and condition;
 `Validate -v -t 0.001 DOMAIN PROBLEM ID.val.plan` (VAL 20210401, in the planutils image) prints
@@ -59,5 +59,5 @@ VAL's trace.
 The scripts read the third-party problems from `$KAIROS_PDDL_CORPUS` (default
 `~/.cache/kairos/corpus`), in the layout of `tools/fetch_corpus.sh` of the Kairos repository,
 and the other planners from the images built by the Dockerfiles above. `paper_battery.sh`
-installs Kairos 1.0.0 apart and runs every suite with the limits of the article (about 3.5
+installs Kairos apart and runs every suite with the limits of the article (about 3.5
 hours on the machine of the article).

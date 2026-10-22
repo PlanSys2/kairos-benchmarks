@@ -1,3 +1,0 @@
-0.000: (askcharge r0 room8 room1) [5.000]
-5.001: (charge r0 room1) [5.000]
-9.001: (move r0 room1 room4) [5.000]
