@@ -1,0 +1,6 @@
+#!/bin/bash
+# DOMAIN PROBLEM: Powerlifted's best configuration for coverage (its README: alt-bfws1, ff,
+# yannakakis, unit costs); the plan goes to sas_plan
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+exec timeout $T python3 /p/powerlifted/powerlifted.py -d "$1" -i "$2" -s alt-bfws1 -e ff \
+  -g yannakakis --unit-cost --plan-file sas_plan

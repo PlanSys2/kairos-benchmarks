@@ -1,0 +1,7 @@
+#!/bin/bash
+# Agile: stops at the first plan (IPC 2023 agile track), DOMAIN PROBLEM -> sas_plan
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+export PATH=$PATH:/p/maidu/ext/clingo
+exec pypy3 /p/maidu/fast-downward.py --overall-time-limit ${T}s --alias seq-agl-maidu \
+  --portfolio-single-plan --plan-file sas_plan "$1" "$2" \
+  --translate-options --invariant-generation-max-candidates 0

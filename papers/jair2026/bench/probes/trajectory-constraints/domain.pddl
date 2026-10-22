@@ -1,0 +1,5 @@
+(define (domain tc) (:requirements :strips :typing :constraints)
+ (:types robot)
+ (:predicates (ready ?r - robot) (a ?r - robot) (b ?r - robot))
+ (:action do-a :parameters (?r - robot) :precondition (and (ready ?r)) :effect (and (a ?r)))
+ (:action do-b :parameters (?r - robot) :precondition (and (ready ?r)) :effect (and (b ?r))))

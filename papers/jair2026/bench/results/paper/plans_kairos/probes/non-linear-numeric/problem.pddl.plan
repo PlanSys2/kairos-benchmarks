@@ -1,0 +1,5 @@
+; cost = 3
+(accelerate r1)
+(accelerate r1)
+(accelerate r1)
+(finish r1)

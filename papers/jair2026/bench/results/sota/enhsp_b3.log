@@ -1,0 +1,67 @@
+20/420
+40/420
+60/420
+80/420
+100/420
+120/420
+140/420
+160/420
+180/420
+200/420
+220/420
+240/420
+260/420
+280/420
+300/420
+320/420
+340/420
+360/420
+380/420
+400/420
+420/420
+# timeout 30 s, extra args: (none)
+| domain | solved | agile |
+|---|---|---|
+| ipc-2002/depots-numeric-automatic | 0/10 | 0.00 |
+| ipc-2002/driverlog-numeric-automatic | 10/10 | 8.63 |
+| ipc-2002/rovers-numeric-automatic | 0/10 | 0.00 |
+| ipc-2002/satellite-numeric-automatic | 3/10 | 2.88 |
+| ipc-2002/settlers-numeric-automatic | 0/10 | 0.00 |
+| ipc-2002/zenotravel-numeric-automatic | 0/10 | 0.00 |
+| ipc2023-numeric/block-grouping | 8/10 | 6.82 |
+| ipc2023-numeric/counters | 10/10 | 8.68 |
+| ipc2023-numeric/delivery | 4/10 | 3.93 |
+| ipc2023-numeric/drone | 8/10 | 7.68 |
+| ipc2023-numeric/expedition | 0/10 | 0.00 |
+| ipc2023-numeric/ext-plant-watering | 10/10 | 7.36 |
+| ipc2023-numeric/farmland | 10/10 | 10.00 |
+| ipc2023-numeric/fo-counters | 0/10 | 0.00 |
+| ipc2023-numeric/fo-farmland | 10/10 | 10.00 |
+| ipc2023-numeric/fo-sailing | 7/10 | 6.87 |
+| ipc2023-numeric/hydropower | 0/10 | 0.00 |
+| ipc2023-numeric/markettrader | 0/10 | 0.00 |
+| ipc2023-numeric/mprime | 10/10 | 8.74 |
+| ipc2023-numeric/pathwaysmetric | 6/10 | 3.89 |
+| ipc2023-numeric/rover | 5/10 | 3.97 |
+| ipc2023-numeric/sailing | 10/10 | 10.00 |
+| ipc2023-numeric/settlersnumeric | 1/10 | 0.20 |
+| ipc2023-numeric/sugar | 7/10 | 6.87 |
+| ipc2023-numeric/tpp | 2/10 | 2.00 |
+| ipc2023-numeric/zenotravel | 9/10 | 6.21 |
+| ipc2026-numeric/2048 | 1/10 | 0.05 |
+| ipc2026-numeric/coins | 4/10 | 3.65 |
+| ipc2026-numeric/expedition | 0/10 | 0.00 |
+| ipc2026-numeric/factory-robot | 2/10 | 1.51 |
+| ipc2026-numeric/forestfire | 10/10 | 9.68 |
+| ipc2026-numeric/gear-car | 0/10 | 0.00 |
+| ipc2026-numeric/line-exchange-snp | 4/10 | 2.78 |
+| ipc2026-numeric/onlycraft-opt | 10/10 | 8.93 |
+| ipc2026-numeric/onlycraft-sat | 7/10 | 6.07 |
+| ipc2026-numeric/petri-net | 6/10 | 6.00 |
+| ipc2026-numeric/rainbowttles-opt | 10/10 | 8.93 |
+| ipc2026-numeric/rainbowttles-sat | 6/10 | 4.06 |
+| ipc2026-numeric/sailing-wind-opt | 10/10 | 10.00 |
+| ipc2026-numeric/sailing-wind-sat | 1/10 | 0.98 |
+| ipc2026-numeric/settlers-snp | 3/10 | 2.51 |
+| ipc2026-numeric/ztalloc-sum | 4/10 | 3.08 |
+| **total** | **208/420** | **182.98** |

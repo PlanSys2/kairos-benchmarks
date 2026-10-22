@@ -1,0 +1,6 @@
+; cost = 36.902
+; makespan = 36.902
+0.000: (recharge r2) [16.900]
+1.000: (recharge r1) [8.000]
+16.901: (mission r1) [10.000]
+26.902: (mission r2) [10.000]

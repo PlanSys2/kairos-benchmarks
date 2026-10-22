@@ -1,0 +1,8 @@
+(define (domain dr) (:requirements :durative-actions :strips :typing :derived-predicates)
+ (:types robot node)
+ (:predicates (edge ?x ?y - node) (at ?r - robot ?x - node) (reach ?r - robot ?x - node))
+ (:derived (reach ?r - robot ?y - node)
+  (or (at ?r ?y) (exists (?x - node) (and (reach ?r ?x) (edge ?x ?y)))))
+ (:durative-action build :parameters (?r - robot ?x ?y - node) :duration (= ?duration 1)
+  :condition (and (at start (reach ?r ?x)))
+  :effect (and (at end (edge ?x ?y)))))

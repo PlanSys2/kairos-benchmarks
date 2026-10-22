@@ -1,0 +1,11 @@
+; cost = 5
+(brev)
+(d)
+(drev)
+(frev)
+(d)
+; better plan 2
+; cost = 3
+(frev)
+(brev)
+(d)

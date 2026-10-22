@@ -1,0 +1,17 @@
+(define (domain window)
+(:requirements :typing :fluents :durative-actions :duration-inequalities :timed-initial-literals)
+(:types robot)
+(:predicates (open) (done ?r - robot) (free ?r - robot) (can_charge ?r - robot))
+(:functions (battery ?r - robot) (capacity ?r - robot) (need ?r - robot))
+(:durative-action recharge
+  :parameters (?r - robot)
+  :duration (and (>= ?duration 1) (<= ?duration (/ (- (capacity ?r) (battery ?r)) 2)))
+  :condition (and (at start (free ?r)) (at start (can_charge ?r)) (over all (open)))
+  :effect (and (at start (not (free ?r))) (at start (not (can_charge ?r))) (at end (free ?r))
+               (increase (battery ?r) (* #t 2))))
+(:durative-action mission
+  :parameters (?r - robot)
+  :duration (= ?duration 10)
+  :condition (and (at start (free ?r)) (at start (>= (battery ?r) (need ?r))))
+  :effect (and (at start (not (free ?r))) (at end (done ?r)) (at end (free ?r))
+               (decrease (battery ?r) (* #t 1)))))

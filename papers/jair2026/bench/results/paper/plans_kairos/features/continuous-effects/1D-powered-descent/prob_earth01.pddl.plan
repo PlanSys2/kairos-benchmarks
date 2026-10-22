@@ -1,0 +1,13 @@
+; cost = 9
+; makespan = 9.000
+0.000: (start_descent) [0.000]
+3.900: (start-thrust) [0.000]
+9.000: (land) [0.000]
+9.000: @PlanEND
+; better plan 2
+; cost = 8.7
+; makespan = 8.700
+0.000: (start_descent) [0.000]
+3.800: (start-thrust) [0.000]
+8.700: (land) [0.000]
+8.700: @PlanEND

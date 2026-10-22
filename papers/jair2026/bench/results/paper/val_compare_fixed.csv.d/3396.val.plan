@@ -1,0 +1,6 @@
+0.000: (transport r0 sugar0 pantry kitchen0) [5.000]
+5.001: (move r0 kitchen0 fridge) [5.000]
+10.002: (transport r0 egg0 fridge kitchen0) [5.000]
+14.003: (move r0 kitchen0 pantry) [5.000]
+20.004: (transport r0 flour0 pantry kitchen0) [5.000]
+25.005: (cook_cake r0 kitchen0 flour0 egg0 sugar0 cake0) [5.000]

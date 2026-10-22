@@ -1,0 +1,16 @@
+; cost = 40
+; makespan = 40.000
+0.000: (overall) [40.000]
+0.001: (go_north_east b0) [1.000]
+1.002: (go_north_east b0) [1.000]
+2.003: (go_north_east b0) [1.000]
+3.004: (go_north_east b0) [1.000]
+4.005: (go_north_east b0) [1.000]
+5.006: (go_north_east b0) [1.000]
+6.007: (go_north_east b0) [1.000]
+7.008: (go_north_east b0) [1.000]
+8.009: (go_west b0) [1.000]
+9.010: (go_west b0) [1.000]
+10.011: (go_west b0) [1.000]
+11.012: (go_west b0) [1.000]
+12.013: (save_person b0 p0) [1.000]

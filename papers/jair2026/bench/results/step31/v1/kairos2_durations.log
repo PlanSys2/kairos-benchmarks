@@ -1,0 +1,10 @@
+20/25
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| durations/charger | 5/5 | 5.00 |
+| durations/drill | 5/5 | 5.00 |
+| durations/oven | 5/5 | 5.00 |
+| durations/tank | 5/5 | 5.00 |
+| durations/window | 5/5 | 5.00 |
+| **total** | **25/25** | **25.00** |

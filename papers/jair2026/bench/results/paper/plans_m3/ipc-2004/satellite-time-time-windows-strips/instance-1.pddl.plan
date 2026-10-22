@@ -1,0 +1,16 @@
+; cost = 176.692
+; makespan = 176.692
+0.000: (turn_to satellite0 phenomenon3 phenomenon6) [14.750]
+0.000: (switch_on instrument0 satellite0) [2.000]
+14.751: (turn_to satellite0 groundstation2 phenomenon3) [33.940]
+48.692: (calibrate satellite0 instrument0 groundstation2) [5.900]
+48.693: (turn_to satellite0 phenomenon4 groundstation2) [39.730]
+88.423: (take_image satellite0 phenomenon4 instrument0 thermograph0) [7.000]
+95.423: (turn_to satellite0 phenomenon6 phenomenon4) [2.098]
+97.521: (take_image satellite0 phenomenon6 instrument0 thermograph0) [7.000]
+104.521: (turn_to satellite0 phenomenon3 phenomenon6) [14.750]
+119.272: (turn_to satellite0 star5 phenomenon3) [10.180]
+129.452: (take_image satellite0 star5 instrument0 thermograph0) [7.000]
+139.000: (send_image satellite0 antenna0 star5 thermograph0) [12.170]
+151.171: (send_image satellite0 antenna0 phenomenon4 thermograph0) [19.520]
+170.692: (send_image satellite0 antenna0 phenomenon6 thermograph0) [6.000]

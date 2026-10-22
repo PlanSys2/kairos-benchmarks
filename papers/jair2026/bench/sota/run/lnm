@@ -1,0 +1,8 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+# IPC 2023 satisficing, linear numeric planning (NLM-CutPlan SAT)
+d=$(realpath "$1"); p=$(realpath "$2"); out=$PWD/sas_plan
+cd /p/lnm && exec timeout $T python2 fast-downward.py --build release64 --plan-file "$out" \
+  "$d" "$p" --search 'lazy_greedy([lmcutnumeric(use_second_order_simple=true, bound_iterations=10, ceiling_less_than_one=true)])'

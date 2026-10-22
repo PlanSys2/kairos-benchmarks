@@ -1,0 +1,6 @@
+#!/bin/bash
+# DOMAIN PROBLEM: ENHSP on PDDL+ (processes and events), discretised in steps of 0.1 s with its
+# hadd: what it needs there (its default numeric configuration does not plan with processes)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+exec timeout $T java -Xmx${KAIROS_JAVA_MEMORY:-2g} -jar /p/enhsp/enhsp.jar -o "$1" -f "$2" \
+  -planner sat-hadd -d 0.1 -sp sas_plan

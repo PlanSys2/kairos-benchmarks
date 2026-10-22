@@ -1,0 +1,47 @@
+; cost = 25.95164902032372
+; makespan = 16.753649
+0.000000: (fly plane2 city2 city0) [3.065657]
+0.000000: (board person4 plane1 city1) [0.300000]
+0.000000: (refuel plane1 city1) [1.564444]
+1.565444: (fly plane1 city1 city3) [3.129213]
+3.065657: (board person3 plane2 city0) [0.300000]
+3.065657: (board person2 plane2 city0) [0.300000]
+3.066657: (refuel plane2 city0) [5.344578]
+4.694658: (debark person4 plane1 city3) [0.600000]
+8.412235: (fly plane2 city0 city3) [3.808081]
+12.220316: (debark person3 plane2 city3) [0.600000]
+12.220316: (debark person2 plane2 city3) [0.600000]
+12.220316: (board person1 plane2 city3) [0.300000]
+12.820316: (fly plane2 city3 city2) [3.333333]
+16.153649: (debark person1 plane2 city2) [0.600000]
+; better plan 2
+; cost = 23.304590511860177
+; makespan = 18.149
+0.000: (refuel plane1 city1) [1.564]
+0.000: (board person4 plane1 city1) [0.300]
+1.565: (fly plane1 city1 city3) [3.129]
+4.695: (debark person4 plane1 city3) [0.600]
+4.695: (board person1 plane1 city3) [0.300]
+5.295: (fly plane1 city3 city2) [3.708]
+9.003: (debark person1 plane1 city2) [0.600]
+9.603: (fly plane1 city2 city0) [3.410]
+13.013: (board person3 plane1 city0) [0.300]
+13.013: (board person2 plane1 city0) [0.300]
+13.313: (fly plane1 city0 city3) [4.236]
+17.549: (debark person3 plane1 city3) [0.600]
+17.549: (debark person2 plane1 city3) [0.600]
+; better plan 3
+; cost = 18.171893882646692
+; makespan = 14.206
+0.000: (refuel plane1 city1) [1.564]
+0.000: (board person4 plane1 city1) [0.300]
+1.565: (fly plane1 city1 city0) [3.197]
+4.762: (board person3 plane1 city0) [0.300]
+4.762: (board person2 plane1 city0) [0.300]
+5.062: (fly plane1 city0 city3) [4.236]
+9.298: (debark person4 plane1 city3) [0.600]
+9.298: (debark person3 plane1 city3) [0.600]
+9.298: (debark person2 plane1 city3) [0.600]
+9.298: (board person1 plane1 city3) [0.300]
+9.898: (fly plane1 city3 city2) [3.708]
+13.606: (debark person1 plane1 city2) [0.600]

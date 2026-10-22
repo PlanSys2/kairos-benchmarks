@@ -1,0 +1,6 @@
+(define (domain ce) (:requirements :durative-actions :strips :typing :conditional-effects)
+ (:types robot)
+ (:predicates (ready ?r - robot) (warm ?r - robot) (done ?r - robot))
+ (:durative-action heat :parameters (?r - robot) :duration (= ?duration 1)
+  :condition (and (at start (ready ?r)))
+  :effect (and (at end (warm ?r)) (when (at start (warm ?r)) (at end (done ?r))))))

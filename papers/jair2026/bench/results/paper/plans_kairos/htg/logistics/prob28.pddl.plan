@@ -1,0 +1,3 @@
+; cost = 2
+(drive-truck truck58 city15-5 city15-6 city15)
+(unload-truck package3 truck58 city15-6)

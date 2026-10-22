@@ -1,0 +1,6 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+exec timeout $T java -Xmx${KAIROS_JAVA_MEMORY:-2g} -jar /p/enhsp/enhsp.jar -o "$1" -f "$2" \
+  -planner sat-hmrphj -sp sas_plan

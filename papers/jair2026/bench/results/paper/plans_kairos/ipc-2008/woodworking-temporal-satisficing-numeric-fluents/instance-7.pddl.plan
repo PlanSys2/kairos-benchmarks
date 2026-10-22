@@ -1,0 +1,65 @@
+; cost = 270.00800000000004
+; makespan = 270.008
+0.000: (do-saw b0 p8 saw0 cherry rough) [30.000]
+30.001: (do-saw b1 p7 saw0 walnut rough) [30.000]
+60.002: (do-saw b1 p6 saw0 walnut rough) [30.000]
+90.003: (do-saw b0 p5 saw0 cherry rough) [30.000]
+120.004: (do-saw b1 p4 saw0 walnut rough) [30.000]
+150.005: (do-saw b1 p3 saw0 walnut rough) [30.000]
+180.006: (do-saw b2 p2 saw0 walnut rough) [30.000]
+210.007: (do-saw b2 p1 saw0 walnut rough) [30.000]
+240.008: (do-saw b0 p0 saw0 cherry rough) [30.000]
+; better plan 2
+; cost = 210.00600000000003
+; makespan = 210.006
+0.000: (do-saw b0 p0 saw0 cherry rough) [30.000]
+30.001: (do-saw b1 p4 saw0 walnut rough) [30.000]
+60.002: (load-highspeed-saw b1 highspeed-saw0) [30.000]
+60.002: (do-saw b2 p1 saw0 walnut rough) [30.000]
+90.003: (cut-board b1 p8 highspeed-saw0 walnut rough) [10.000]
+90.003: (do-saw b2 p7 saw0 walnut rough) [30.000]
+100.004: (cut-board b1 p2 highspeed-saw0 walnut rough) [10.000]
+120.004: (do-saw b0 p6 saw0 cherry rough) [30.000]
+150.005: (do-saw b2 p5 saw0 walnut rough) [30.000]
+180.006: (do-saw b0 p3 saw0 cherry rough) [30.000]
+; better plan 3
+; cost = 180.00500000000002
+; makespan = 180.005
+0.000: (do-saw b0 p0 saw0 cherry rough) [30.000]
+30.001: (do-saw b1 p4 saw0 walnut rough) [30.000]
+60.002: (do-saw b0 p8 saw0 cherry rough) [30.000]
+60.002: (load-highspeed-saw b1 highspeed-saw0) [30.000]
+90.003: (do-saw b2 p2 saw0 walnut rough) [30.000]
+90.003: (cut-board b1 p7 highspeed-saw0 walnut rough) [10.000]
+100.004: (cut-board b1 p6 highspeed-saw0 walnut rough) [10.000]
+110.005: (cut-board b1 p3 highspeed-saw0 walnut rough) [10.000]
+120.004: (do-saw b2 p1 saw0 walnut rough) [30.000]
+150.005: (do-saw b0 p5 saw0 cherry rough) [30.000]
+; better plan 4
+; cost = 120.00500000000002
+; makespan = 120.005
+0.000: (do-saw b0 p0 saw0 cherry rough) [30.000]
+30.001: (do-saw b1 p4 saw0 walnut rough) [30.000]
+30.001: (load-highspeed-saw b0 highspeed-saw0) [30.000]
+60.002: (do-saw b2 p2 saw0 walnut rough) [30.000]
+60.002: (cut-board b0 p8 highspeed-saw0 cherry rough) [10.000]
+60.002: (load-highspeed-saw b1 highspeed-saw1) [30.000]
+70.003: (cut-board b0 p5 highspeed-saw0 cherry rough) [10.000]
+90.003: (do-saw b2 p1 saw0 walnut rough) [30.000]
+90.003: (cut-board b1 p7 highspeed-saw1 walnut rough) [10.000]
+100.004: (cut-board b1 p6 highspeed-saw1 walnut rough) [10.000]
+110.005: (cut-board b1 p3 highspeed-saw1 walnut rough) [10.000]
+; better plan 5
+; cost = 70.00399999999999
+; makespan = 70.004
+0.000: (load-highspeed-saw b1 highspeed-saw0) [30.000]
+0.000: (load-highspeed-saw b0 highspeed-saw1) [30.000]
+0.000: (do-saw b2 p2 saw0 walnut rough) [30.000]
+30.001: (cut-board b1 p4 highspeed-saw0 walnut rough) [10.000]
+30.001: (cut-board b0 p8 highspeed-saw1 cherry rough) [10.000]
+30.001: (do-saw b2 p3 saw0 walnut rough) [30.000]
+40.002: (cut-board b1 p1 highspeed-saw0 walnut rough) [10.000]
+40.002: (cut-board b0 p5 highspeed-saw1 cherry rough) [10.000]
+50.003: (cut-board b0 p0 highspeed-saw1 cherry rough) [10.000]
+50.003: (cut-board b1 p7 highspeed-saw0 walnut rough) [10.000]
+60.004: (cut-board b1 p6 highspeed-saw0 walnut rough) [10.000]

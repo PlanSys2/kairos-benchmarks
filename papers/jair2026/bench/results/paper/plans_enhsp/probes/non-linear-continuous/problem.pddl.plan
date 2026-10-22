@@ -1,0 +1,4 @@
+0: (grow-on r1)
+1.0: (grow-off r1)
+1.0: (check r1)
+1.0: @PlanEND 

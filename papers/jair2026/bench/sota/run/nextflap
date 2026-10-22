@@ -1,0 +1,14 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+timeout $T /p/nextflap/nextflap "$1" "$2" > out.txt 2>&1
+code=$?
+cat out.txt
+# Anytime: each plan is a block of timed steps closed by ";Makespan", the first step after
+# one progress dot per plan so far; the last whole one
+awk '/^\.*[0-9.]+: *\(/ {sub(/^\.+/, ""); block = block $0 "\n"; next}
+     /^;Makespan/ {last = block; block = ""; next}
+     END {printf "%s", last}' out.txt > sas_plan
+[ -s sas_plan ] && exit 0
+exit $code

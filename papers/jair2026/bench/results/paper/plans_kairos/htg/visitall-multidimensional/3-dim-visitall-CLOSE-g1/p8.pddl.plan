@@ -1,0 +1,13 @@
+; cost = 12
+(move-2 p0 p0 p0 p1)
+(move-2 p0 p0 p1 p2)
+(move-2 p0 p0 p2 p3)
+(move-2 p0 p0 p3 p4)
+(move-2 p0 p0 p4 p5)
+(move-2 p0 p0 p5 p6)
+(move-0 p0 p0 p6 p1)
+(move-0 p1 p0 p6 p2)
+(move-0 p2 p0 p6 p3)
+(move-0 p3 p0 p6 p4)
+(move-0 p4 p0 p6 p5)
+(move-0 p5 p0 p6 p6)

@@ -1,0 +1,16 @@
+; cost = 44.15374943018896
+; makespan = 22.859
+0.000: (board person5 plane1 city2) [0.300]
+0.000: (board person4 plane2 city1) [0.300]
+0.000: (refuel plane2 city1) [1.401]
+0.000: (refuel plane1 city2) [3.986]
+1.402: (fly plane2 city1 city0) [7.905]
+3.987: (fly plane1 city2 city1) [9.000]
+9.307: (board person2 plane2 city0) [0.300]
+9.307: (board person1 plane2 city0) [0.300]
+9.607: (fly plane2 city0 city3) [5.526]
+12.987: (debark person5 plane1 city1) [0.600]
+15.133: (debark person4 plane2 city3) [0.600]
+15.133: (debark person1 plane2 city3) [0.600]
+15.733: (fly plane2 city3 city1) [6.526]
+22.259: (debark person2 plane2 city1) [0.600]

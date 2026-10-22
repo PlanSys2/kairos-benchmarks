@@ -1,0 +1,6 @@
+(define (domain qp) (:requirements :strips :typing :quantified-preconditions)
+ (:types robot box)
+ (:predicates (ready ?r - robot) (open ?b - box) (done ?r - robot))
+ (:action open-box :parameters (?r - robot ?b - box) :precondition (and (ready ?r)) :effect (and (open ?b)))
+ (:action finish :parameters (?r - robot) :precondition (and (ready ?r) (forall (?b - box) (open ?b)))
+  :effect (and (done ?r))))

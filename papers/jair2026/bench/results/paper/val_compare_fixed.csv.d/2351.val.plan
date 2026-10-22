@@ -1,0 +1,4 @@
+(drive-truck t0 l0-1553 l0-173 c0)
+(load-truck p4 t0 l0-173)
+(drive-truck t0 l0-173 l0-1330 c0)
+(unload-truck p4 t0 l0-1330)

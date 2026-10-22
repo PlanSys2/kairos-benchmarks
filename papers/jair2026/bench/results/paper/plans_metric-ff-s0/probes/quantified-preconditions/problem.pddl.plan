@@ -1,0 +1,3 @@
+( OPEN-BOX R1 B2 )
+( OPEN-BOX R1 B1 )
+( FINISH R1 )

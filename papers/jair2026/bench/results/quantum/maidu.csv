@@ -1,0 +1,11 @@
+domain,problem,status,time,steps,cost,expanded
+ipc2023/quantum-layout,p01.pddl,solved,27.342,39,39,
+ipc2023/quantum-layout,p03.pddl,solved,26.653,52,52,
+ipc2023/quantum-layout,p05.pddl,solved,27.298,63,63,
+ipc2023/quantum-layout,p07.pddl,solved,26.782,24,24,
+ipc2023/quantum-layout,p09.pddl,solved,27.069,35,35,
+ipc2023/quantum-layout,p11.pddl,solved,27.770,78,78,
+ipc2023/quantum-layout,p13.pddl,error,26.900,,,
+ipc2023/quantum-layout,p15.pddl,solved,26.890,34,34,
+ipc2023/quantum-layout,p17.pddl,solved,26.395,47,47,
+ipc2023/quantum-layout,p19.pddl,solved,27.573,53,53,

@@ -1,0 +1,51 @@
+20/255
+40/255
+60/255
+80/255
+100/255
+120/255
+140/255
+160/255
+180/255
+200/255
+220/255
+240/255
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| pddlplus/1D-powered-descent | 10/10 | 10.00 |
+| pddlplus/agile_robot | 10/10 | 7.68 |
+| pddlplus/automatic_transmission/AT1 | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT2 | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT51 | 2/6 | 0.22 |
+| pddlplus/automatic_transmission/AT52 | 6/6 | 3.67 |
+| pddlplus/automatic_transmission/AT53 | 3/6 | 1.42 |
+| pddlplus/automatic_transmission/AT54 | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT5or | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT6a | 1/6 | 0.65 |
+| pddlplus/automatic_transmission/AT6abc | 1/6 | 0.69 |
+| pddlplus/automatic_transmission/AT6b | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT6c | 0/6 | 0.00 |
+| pddlplus/automatic_transmission/AT6or | 0/6 | 0.00 |
+| pddlplus/car | 8/8 | 8.00 |
+| pddlplus/car_nl | 8/8 | 8.00 |
+| pddlplus/chasing_cars/CC1 | 1/6 | 0.52 |
+| pddlplus/chasing_cars/CC2 | 6/6 | 6.00 |
+| pddlplus/chasing_cars/CC3 | 0/6 | 0.00 |
+| pddlplus/chasing_cars/CC4 | 0/6 | 0.00 |
+| pddlplus/chasing_cars/CCx | 6/6 | 4.52 |
+| pddlplus/chasing_cars/CCy | 1/6 | 0.52 |
+| pddlplus/chasing_cars/CCz | 1/6 | 0.52 |
+| pddlplus/convoys | 6/6 | 6.00 |
+| pddlplus/generator | 8/8 | 8.00 |
+| pddlplus/generator_nl | 4/8 | 3.00 |
+| pddlplus/hasp | 0/10 | 0.00 |
+| pddlplus/hvac | 8/10 | 4.33 |
+| pddlplus/intercept | 10/10 | 8.03 |
+| pddlplus/smtplan/car_nodrag | 10/10 | 8.46 |
+| pddlplus/smtplan/generator_events | 8/8 | 8.00 |
+| pddlplus/smtplan/generator_linear | 8/8 | 8.00 |
+| pddlplus/smtplan/generator_nonlinear | 8/8 | 8.00 |
+| pddlplus/smtplan/generator_toricelli | 8/9 | 7.33 |
+| pddlplus/zermelo_navigation_problem | 6/10 | 4.08 |
+| **total** | **148/255** | **125.66** |

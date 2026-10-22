@@ -1,0 +1,5 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+exec timeout $T /p/bfws/bfws --domain "$1" --problem "$2" --output sas_plan --DUAL-BFWS true

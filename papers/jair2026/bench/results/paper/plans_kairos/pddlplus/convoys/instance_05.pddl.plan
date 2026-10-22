@@ -1,0 +1,7 @@
+; cost = 9.1
+; makespan = 9.100
+0.100: (assign_route c2 loc_a loc_b) [0.000]
+3.100: (park c2 loc_a loc_b) [0.000]
+3.100: (assign_route c1 loc_a loc_b) [0.000]
+9.100: (park c1 loc_a loc_b) [0.000]
+9.100: @PlanEND

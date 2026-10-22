@@ -1,0 +1,6 @@
+; cost = 1000.2
+; makespan = 1000.200
+0.000: (turn_on gen_1) [0.000]
+960.000: (start_refueling gen_1 tank_2) [0.000]
+980.100: (start_refueling gen_1 tank_1) [0.000]
+1000.200: @PlanEND

@@ -1,0 +1,7 @@
+0.000: (turn_on gen_1) [0.000]
+860.000: (start_refueling gen_1 tank_7) [0.000]
+880.100: (start_refueling gen_1 tank_6) [0.000]
+900.200: (start_refueling gen_1 tank_5) [0.000]
+940.400: (start_refueling gen_1 tank_3) [0.000]
+960.500: (start_refueling gen_1 tank_2) [0.000]
+980.600: (start_refueling gen_1 tank_1) [0.000]

@@ -1,0 +1,6 @@
+#!/bin/bash
+# Agile: stops at the first plan (IPC 2023 agile track), DOMAIN PROBLEM -> sas_plan
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+exec pypy3 /p/fdss/fast-downward.py --overall-time-limit ${T}s --alias seq-sat-fdss-2023 \
+  --portfolio-single-plan --plan-file sas_plan "$1" "$2" \
+  --translate-options --invariant-generation-max-candidates=0

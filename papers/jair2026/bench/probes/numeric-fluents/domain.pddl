@@ -1,0 +1,7 @@
+(define (domain nf) (:requirements :strips :typing :fluents)
+ (:types robot)
+ (:predicates (ready ?r - robot) (done ?r - robot))
+ (:functions (load ?r - robot) (total-cost))
+ (:action pick :parameters (?r - robot) :precondition (and (ready ?r) (< (load ?r) 10))
+  :effect (and (increase (load ?r) 1) (increase (total-cost) 1)))
+ (:action finish :parameters (?r - robot) :precondition (and (>= (load ?r) 3)) :effect (and (done ?r))))

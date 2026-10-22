@@ -1,0 +1,11 @@
+; cost = 10
+(pour bottle02 blue green bottle05)
+(pour bottle04 red blue bottle01)
+(close-bottle bottle01 red)
+(pour bottle03 green blue bottle02)
+(close-bottle bottle02 green)
+(pour bottle05 blue empty bottle04)
+(close-empty-bottle bottle05)
+(pour bottle03 blue empty bottle04)
+(close-bottle bottle04 blue)
+(close-empty-bottle bottle03)

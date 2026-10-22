@@ -1,0 +1,17 @@
+(define (domain charger)
+(:requirements :typing :fluents :durative-actions :duration-inequalities :timed-initial-literals)
+(:types robot)
+(:predicates (charger_free) (open) (done ?r - robot) (free ?r - robot) (flat ?r - robot))
+(:functions (battery ?r - robot) (capacity ?r - robot) (need ?r - robot))
+(:durative-action charge
+  :parameters (?r - robot)
+  :duration (and (>= ?duration 1) (<= ?duration (/ (- (capacity ?r) (battery ?r)) 4)))
+  :condition (and (at start (free ?r)) (at start (flat ?r)) (at start (charger_free))
+                  (over all (open)))
+  :effect (and (at start (not (free ?r))) (at start (not (flat ?r))) (at start (not (charger_free)))
+               (at end (free ?r)) (at end (charger_free))
+               (increase (battery ?r) (* #t 4))))
+(:action go
+  :parameters (?r - robot)
+  :precondition (and (free ?r) (>= (battery ?r) (need ?r)))
+  :effect (done ?r)))

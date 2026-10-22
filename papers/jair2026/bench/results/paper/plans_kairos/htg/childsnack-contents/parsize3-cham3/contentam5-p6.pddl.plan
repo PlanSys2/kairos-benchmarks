@@ -1,0 +1,13 @@
+; cost = 12
+(make_sandwich sandw0 bread0 content-1-0 content-0-5 content-4-3 content-1 content-0 content-4)
+(put_on_tray sandw0 tray2)
+(move_tray tray2 kitchen table0)
+(serve_sandwich sandw0 content-1 content-0 content-4 child0 tray2 table0)
+(make_sandwich sandw1 bread1 content-1-1 content-0-4 content-4-2 content-1 content-0 content-4)
+(put_on_tray sandw1 tray1)
+(move_tray tray1 kitchen table1)
+(serve_sandwich sandw1 content-1 content-0 content-4 child1 tray1 table1)
+(make_sandwich sandw2 bread2 content-1-2 content-0-3 content-4-1 content-1 content-0 content-4)
+(put_on_tray sandw2 tray0)
+(move_tray tray0 kitchen table2)
+(serve_sandwich sandw2 content-1 content-0 content-4 child2 tray0 table2)

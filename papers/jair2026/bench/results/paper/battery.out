@@ -1,0 +1,25 @@
+kairos 1.0.0
+00:45 kairos classical: | **total** | **165/220** | **132.64** | (11 min)
+01:07 kairos b3: | **total** | **299/420** | **254.87** | (21 min)
+01:19 kairos b1: | **total** | **180/225** | **164.95** | (12 min)
+01:22 kairos b2: | **total** | **33/55** | **32.54** | (3 min)
+01:23 kairos examples: | **total** | **14/14** | **14.00** | (0 min)
+01:29 kairos prefs: | **total** | **86/125** | **79.93** | (6 min)
+01:29 kairos durations: | **total** | **25/25** | **25.00** | (0 min)
+01:38 kairos pddlplus: | **total** | **148/255** | **125.66** | (8 min)
+01:50 kairos htg: | **total** | **215/287** | **183.10** | (12 min)
+02:08 kairos features: | **total** | **308/450** | **280.02** | (17 min)
+02:19 kairos b6: | **total** | **93/144** | **86.53** | (10 min)
+kairos 1.0.0
+02:20 validator: 11 suites
+kairos 1.0.0
+02:27 m2 b1: | **total** | **179/225** | **163.15** | (7 min)
+02:40 m3 b1: | **total** | **124/225** | **107.28** | (12 min)
+02:40 m2 b2: | **total** | **5/55** | **5.00** | (0 min)
+02:43 m3 b2: | **total** | **33/55** | **32.54** | (3 min)
+02:56 ff classical: | **total** | **139/220** | **125.43** | (12 min)
+03:08 lama classical: | **total** | **157/220** | **133.94** | (12 min)
+03:29 ff b3: | **total** | **266/420** | **245.13** | (21 min)
+03:51 lama b3: | **total** | **272/420** | **245.82** | (21 min)
+04:02 lama b6: | **total** | **94/144** | **78.49** | (11 min)
+end 04:02

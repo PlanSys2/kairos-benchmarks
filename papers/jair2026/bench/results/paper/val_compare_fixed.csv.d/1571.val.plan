@@ -1,0 +1,8 @@
+0.000000: (move herbie wp0 wp1) [121.951219]
+121.951219: (visit herbie wp1) [1.000000]
+122.951219: (move herbie wp1 rp0) [121.951219]
+244.903439: (refuel herbie rp0) [6.666667]
+251.571105: (move herbie rp0 wp3) [154.236416]
+405.807521: (visit herbie wp3) [1.000000]
+406.807521: (move herbie wp3 wp2) [121.977813]
+528.785334: (visit herbie wp2) [1.000000]

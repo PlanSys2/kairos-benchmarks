@@ -1,0 +1,8 @@
+0.000: (recharge r1 recharge_zone) [10.000]
+10.001: (move r1 recharge_zone fridge) [5.000]
+15.002: (transport r1 egg fridge kitchen1) [8.000]
+23.003: (move r1 kitchen1 pantry) [5.000]
+28.004: (transport r1 salt pantry kitchen1) [8.000]
+35.005: (move r1 kitchen1 pantry) [5.000]
+41.006: (transport r1 oil pantry kitchen1) [8.000]
+49.007: (cook_omelette r1 kitchen1 egg oil salt omelette1) [10.000]

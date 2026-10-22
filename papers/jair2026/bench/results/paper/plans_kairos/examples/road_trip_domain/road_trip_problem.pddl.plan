@@ -1,0 +1,25 @@
+; cost = 850.2112237092017
+; makespan = 850.211224
+0.000000: (move herbie wp0 wp1) [121.951219]
+121.951219: (visit herbie wp1) [1.000000]
+122.951219: (move herbie wp1 rp0) [121.951219]
+244.903439: (refuel herbie rp0) [6.666667]
+251.571105: (move herbie rp0 rp1) [243.902439]
+495.474545: (refuel herbie rp1) [6.666667]
+502.142211: (move herbie rp1 wp3) [109.076491]
+611.218702: (visit herbie wp3) [1.000000]
+612.218702: (move herbie wp3 rp1) [109.076491]
+721.296193: (refuel herbie rp1) [5.962848]
+727.260042: (move herbie rp1 wp2) [121.951182]
+849.211224: (visit herbie wp2) [1.000000]
+; better plan 2
+; cost = 529.7853343684128
+; makespan = 529.785334
+0.000000: (move herbie wp0 wp1) [121.951219]
+121.951219: (visit herbie wp1) [1.000000]
+122.951219: (move herbie wp1 rp0) [121.951219]
+244.903439: (refuel herbie rp0) [6.666667]
+251.571105: (move herbie rp0 wp3) [154.236416]
+405.807521: (visit herbie wp3) [1.000000]
+406.807521: (move herbie wp3 wp2) [121.977813]
+528.785334: (visit herbie wp2) [1.000000]

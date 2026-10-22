@@ -1,0 +1,6 @@
+; cost = 24
+; makespan = 24.000
+0.000: (start_descent) [0.000]
+9.500: (start-thrust) [0.000]
+24.000: (land) [0.000]
+24.000: @PlanEND

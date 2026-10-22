@@ -1,0 +1,27 @@
+; cost = 84040.009
+; makespan = 84040.009
+0.000: (initialize) [1.000]
+0.001: (colorfeeder-feed-letter-0 sheet1) [8000.000]
+8000.002: (down-movebottom-letter-0 sheet1) [2999.000]
+10999.003: (down-movebottom-letter-1 sheet1) [1.000]
+11000.004: (colorcontainer-toime-letter-0 sheet1) [8000.000]
+19000.005: (colorprinter-simplexmono-letter-0 sheet1 front image-1) [39040.000]
+58040.006: (colorcontainer-fromime-letter sheet1) [8000.000]
+66040.007: (up-moveup-letter-0 sheet1) [9999.000]
+76039.008: (up-moveup-letter-1 sheet1) [1.000]
+76040.009: (finisher1-stack-letter-0 sheet1 dummy-sheet) [8000.000]
+; better plan 2
+; cost = 69010.01099999998
+; makespan = 69010.011
+0.000: (initialize) [1.000]
+0.001: (blackfeeder-feed-letter-0 sheet1) [8000.000]
+8000.002: (blackcontainer-toime-letter sheet1) [2000.000]
+10000.003: (blackprinter-simplex-letter-0 sheet1 front image-1) [13013.000]
+23013.004: (blackcontainer-fromime-letter sheet1) [2000.000]
+25013.005: (endcap-move-letter sheet1) [2000.000]
+27013.006: (htmoverblack-move-letter sheet1) [17999.000]
+45012.007: (down-movetop-letter sheet1) [2999.000]
+48011.008: (htmovercolor-move-letter sheet1) [9999.000]
+58010.009: (up-movetop-letter-0 sheet1) [2999.000]
+61009.010: (up-movetop-letter-1 sheet1) [1.000]
+61010.011: (finisher1-stack-letter-0 sheet1 dummy-sheet) [8000.000]

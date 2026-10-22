@@ -1,0 +1,2 @@
+; cost = 1
+(invert-single-gene-a sub3)

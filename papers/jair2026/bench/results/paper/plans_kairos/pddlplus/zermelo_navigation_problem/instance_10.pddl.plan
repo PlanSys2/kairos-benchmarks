@@ -1,0 +1,6 @@
+; cost = 2024.9
+; makespan = 2024.900
+0.000: (full_sail_ahead the_boat) [0.000]
+1249.100: (wheel_to_starboard the_boat) [0.000]
+1852.000: (full_sail_ahead the_boat) [0.000]
+2024.900: @PlanEND

@@ -1,0 +1,5 @@
+(define (domain ce) (:requirements :strips :typing :conditional-effects)
+ (:types robot)
+ (:predicates (ready ?r - robot) (warm ?r - robot) (done ?r - robot))
+ (:action heat :parameters (?r - robot) :precondition (and (ready ?r))
+  :effect (and (warm ?r) (when (warm ?r) (done ?r)))))

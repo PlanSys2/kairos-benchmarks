@@ -1,0 +1,42 @@
+; cost = 56.86211111111111
+; makespan = 56.862
+0.000: (lift hoist0 crate1 pallet0 depot0) [1.000]
+0.000: (lift hoist1 crate0 pallet1 distributor0) [1.000]
+0.000: (load hoist0 crate1 truck1 depot0) [43.000]
+43.000: (drive truck1 depot0 distributor0) [0.625]
+43.625: (load hoist1 crate0 truck1 distributor0) [1.222]
+44.848: (unload hoist1 crate1 truck1 distributor0) [9.556]
+44.848: (drop hoist1 crate1 pallet1 distributor0) [1.000]
+54.404: (drive truck1 distributor0 distributor1) [0.625]
+55.029: (unload hoist2 crate0 truck1 distributor1) [1.833]
+55.029: (drop hoist2 crate0 pallet2 distributor1) [1.000]
+; better plan 2
+; cost = 54.403777777777776
+; makespan = 54.404
+0.000: (lift hoist0 crate1 pallet0 depot0) [1.000]
+0.000: (load hoist0 crate1 truck1 depot0) [43.000]
+0.000: (lift hoist1 crate0 pallet1 distributor0) [1.000]
+0.000: (drive truck0 distributor1 distributor0) [1.000]
+43.000: (drive truck1 depot0 distributor0) [0.625]
+43.625: (load hoist1 crate0 truck1 distributor0) [1.222]
+44.848: (unload hoist1 crate1 truck1 distributor0) [9.556]
+44.848: (drop hoist1 crate1 pallet1 distributor0) [1.000]
+45.849: (unload hoist1 crate0 truck1 distributor0) [1.222]
+45.849: (load hoist1 crate0 truck0 distributor0) [1.222]
+47.071: (drive truck0 distributor0 distributor1) [1.250]
+48.321: (unload hoist2 crate0 truck0 distributor1) [1.833]
+48.321: (drop hoist2 crate0 pallet2 distributor1) [1.000]
+; better plan 3
+; cost = 53.18055555555556
+; makespan = 53.181
+0.000: (lift hoist1 crate0 pallet1 distributor0) [1.000]
+0.000: (drive truck0 distributor1 distributor0) [1.000]
+0.000: (lift hoist0 crate1 pallet0 depot0) [1.000]
+0.000: (load hoist0 crate1 truck1 depot0) [43.000]
+1.000: (load hoist1 crate0 truck0 distributor0) [1.222]
+2.222: (drive truck0 distributor0 distributor1) [1.250]
+3.472: (unload hoist2 crate0 truck0 distributor1) [1.833]
+3.472: (drop hoist2 crate0 pallet2 distributor1) [1.000]
+43.000: (drive truck1 depot0 distributor0) [0.625]
+43.625: (unload hoist1 crate1 truck1 distributor0) [9.556]
+43.625: (drop hoist1 crate1 pallet1 distributor0) [1.000]

@@ -1,0 +1,6 @@
+; cost = 5
+; makespan = 5.000
+0.000: (pump-on r1) [0.000]
+5.000: (pump-off r1) [0.000]
+5.000: (check r1) [0.000]
+5.000: @PlanEND

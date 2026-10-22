@@ -1,0 +1,14 @@
+; cost = -23.997
+; makespan = 1.003
+0.000: (choose pcaf) [0.000]
+0.000: (choose p300) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize p300) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize pcaf) [0.000]
+0.001: (initialize p300) [0.000]
+0.002: (associate pcaf p300 pcaf-p300) [1.000]
+0.003: (associate pcaf p300 pcaf-p300) [1.000]

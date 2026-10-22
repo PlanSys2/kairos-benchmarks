@@ -1,0 +1,8 @@
+; cost = 7
+(start_robot bluerov)
+(reconfigure1 f_maintain_motion fd_all_thrusters)
+(reconfigure1 f_generate_search_path fd_spiral_high)
+(search_pipeline pipeline bluerov)
+(reconfigure1 f_follow_pipeline fd_follow_pipeline)
+(reconfigure2 f_generate_search_path fd_spiral_high fd_unground)
+(inspect_pipeline pipeline bluerov)

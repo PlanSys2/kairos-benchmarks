@@ -1,0 +1,7 @@
+0.000: (recharge r1 wp0) [1.000]
+1.001: (recharge r1 wp0) [1.000]
+2.002: (recharge r1 wp0) [1.000]
+3.003: (recharge r1 wp0) [1.000]
+4.004: (move r1 wp0 wp1) [30.000]
+34.005: (move r1 wp1 wp2) [30.000]
+64.006: (move r1 wp2 wp3) [30.000]

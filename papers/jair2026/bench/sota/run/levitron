@@ -1,0 +1,19 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+export CPDDL_BIN=/p/maidu/ext/cpddl/bin POWERLIFTED_IPC=/p/maidu/ext/powerlifted
+export PATH=$PATH:/p/maidu/ext/clingo
+start=$(date +%s)
+pypy3 /p/maidu/fast-downward.py --overall-time-limit ${T}s --translate-time-limit $(( T / 2 ))s \
+  --transform-task preprocess-h2 --transform-task-options h2_time_limit,$(( T / 10 )) \
+  --alias seq-sat-maidu --plan-file sas_plan "$1" "$2" && exit 0
+left=$(( T - ($(date +%s) - start) ))
+[ $left -gt 0 ] || exit 1
+exec pypy3 /p/maidu/ext/powerlifted/powerlifted.py -d "$1" -i "$2" --plan-file sas_plan \
+  --iteration alt-bfws1,rff,yannakakis,476 --iteration alt-bfws1,add,yannakakis,38 \
+  --iteration alt-bfws2,ff,yannakakis,74 --iteration alt-bfws2,add,yannakakis,359 \
+  --iteration lazy-po,ff,yannakakis,234 --iteration bfws2,blind,yannakakis,278 \
+  --iteration lazy-po,add,yannakakis,80 --iteration bfws1,blind,yannakakis,116 \
+  --iteration gbfs,rff,yannakakis,80 --iteration gbfs,add,yannakakis,29 \
+  --unit-cost --preprocess-task --only-effects-novelty-check --time-limit $left

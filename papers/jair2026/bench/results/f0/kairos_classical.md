@@ -1,0 +1,26 @@
+# timeout 30 s, extra args: (none)
+| domain | solved | agile |
+|---|---|---|
+| ipc-1998/logistics-round-1-strips | 10/10 | 7.50 |
+| ipc-2000/blocks-strips-typed | 6/10 | 6.00 |
+| ipc-2000/freecell-strips-typed | 10/10 | 9.45 |
+| ipc-2002/depots-strips-automatic | 8/10 | 7.98 |
+| ipc-2002/driverlog-strips-automatic | 10/10 | 9.54 |
+| ipc-2002/rovers-strips-automatic | 10/10 | 10.00 |
+| ipc-2004/airport-nontemporal-strips | 7/10 | 7.00 |
+| ipc-2004/pipesworld-no-tankage-nontemporal-strips | 9/10 | 9.00 |
+| ipc-2006/tpp-propositional-strips | 10/10 | 9.50 |
+| ipc-2006/trucks-propositional-strips | 5/10 | 3.26 |
+| ipc-2008/sokoban-sequential-satisficing-strips | 3/10 | 3.00 |
+| ipc-2008/woodworking-sequential-satisficing-strips | 10/10 | 10.00 |
+| ipc-2011/barman-sequential-satisficing | 0/10 | 0.00 |
+| ipc-2011/parking-sequential-satisficing | 7/10 | 1.45 |
+| ipc-2014/hiking-sequential-satisficing | 6/10 | 2.63 |
+| ipc2023/folding | 1/10 | 0.37 |
+| ipc2023/labyrinth | 0/10 | 0.00 |
+| ipc2023/quantum-layout | 0/10 | 0.00 |
+| ipc2023/recharging-robots | 0/10 | 0.00 |
+| ipc2023/ricochet-robots | 0/10 | 0.00 |
+| ipc2023/rubiks-cube | 6/10 | 3.75 |
+| ipc2023/slitherlink | 2/10 | 1.29 |
+| **total** | **120/220** | **101.72** |

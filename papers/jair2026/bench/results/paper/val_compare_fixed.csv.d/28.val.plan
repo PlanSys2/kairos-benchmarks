@@ -1,0 +1,8 @@
+(move robot-01 location-0003 location-0002 battery-0002 battery-0001)
+(move robot-01 location-0002 location-0010 battery-0001 battery-0000)
+(stop-and-guard robot-01 location-0010)
+(move robot-02 location-0025 location-0022 battery-0007 battery-0006)
+(move robot-02 location-0022 location-0012 battery-0006 battery-0005)
+(move robot-02 location-0012 location-0021 battery-0005 battery-0004)
+(stop-and-guard robot-02 location-0021)
+(verify-guard-config config-00)

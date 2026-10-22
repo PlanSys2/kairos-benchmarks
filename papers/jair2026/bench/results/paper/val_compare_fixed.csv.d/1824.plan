@@ -1,0 +1,6 @@
+0.000: (start_descent) [0.000]
+1.100: (start-thrust) [0.000]
+0.200: (stop-thrust) [0.000]
+11.900: (start-thrust) [0.000]
+29.100: (land) [0.000]
+29.100: @PlanEND

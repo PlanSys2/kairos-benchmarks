@@ -1,0 +1,4 @@
+; cost = 2
+; makespan = 2.000
+0.000: (move car0 wp0 wp3) [1.000]
+1.000: (visit car0 wp3) [1.000]

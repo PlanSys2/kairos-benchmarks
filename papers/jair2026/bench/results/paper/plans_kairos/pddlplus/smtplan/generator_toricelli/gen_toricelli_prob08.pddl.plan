@@ -1,0 +1,27 @@
+; cost = 1021.12
+; makespan = 1021.120
+0.000: (refuel generator tank1) [0.001]
+0.002: (refuel generator tank2) [0.001]
+0.004: (refuel generator tank3) [0.001]
+0.006: (refuel generator tank4) [0.001]
+0.008: (refuel generator tank5) [12.400]
+12.409: (refuel generator tank1) [8.505]
+12.410: (refuel generator tank2) [8.505]
+12.411: (refuel generator tank3) [8.505]
+12.412: (refuel generator tank4) [8.505]
+12.413: (refuel generator tank6) [8.505]
+12.414: (refuel generator tank7) [8.704]
+21.119: (generate generator) [1000.000]
+1020.919: (refuel generator tank1) [0.201]
+; better plan 2
+; cost = 1015.213
+; makespan = 1015.213
+0.000: (refuel generator tank1) [12.405]
+0.001: (refuel generator tank2) [12.405]
+0.002: (refuel generator tank3) [12.405]
+0.003: (refuel generator tank4) [12.405]
+0.004: (refuel generator tank5) [12.405]
+0.005: (refuel generator tank6) [12.405]
+12.411: (refuel generator tank7) [2.800]
+15.212: (generate generator) [1000.000]
+1015.112: (refuel generator tank7) [0.101]

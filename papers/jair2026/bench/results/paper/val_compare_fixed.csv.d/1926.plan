@@ -1,0 +1,4 @@
+0.000: (start_car) [0.000]
+1.900: (decelerate) [0.000]
+96.100: (stop_car) [0.000]
+96.100: @PlanEND

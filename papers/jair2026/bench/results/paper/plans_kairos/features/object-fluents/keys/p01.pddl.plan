@@ -1,0 +1,7 @@
+; cost = 6
+(take bot k0 room0)
+(unlock bot d0 room0 room1)
+(take bot k1 room0)
+(go bot d0 room0 room1)
+(unlock bot d1 room1 room2)
+(go bot d1 room1 room2)

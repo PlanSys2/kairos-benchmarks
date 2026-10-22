@@ -1,0 +1,5 @@
+(define (domain da) (:requirements :strips :typing :durative-actions)
+ (:types robot)
+ (:predicates (ready ?r - robot) (done ?r - robot))
+ (:durative-action work :parameters (?r - robot) :duration (= ?duration 2)
+  :condition (and (at start (ready ?r))) :effect (and (at end (done ?r)))))

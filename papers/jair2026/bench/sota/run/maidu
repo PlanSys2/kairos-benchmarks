@@ -1,0 +1,7 @@
+#!/bin/bash
+# DOMAIN PROBLEM: the plan goes to sas_plan (anytime planners: sas_plan.1, .2...) in the current
+# directory; the time limit is $KAIROS_TIMEOUT seconds (a few less, to write the last plan)
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+export PATH=$PATH:/p/maidu/ext/clingo
+exec pypy3 /p/maidu/fast-downward.py --overall-time-limit ${T}s --transform-task preprocess-h2 \
+  --transform-task-options h2_time_limit,$(( T / 10 )) --alias seq-sat-maidu --plan-file sas_plan "$1" "$2"

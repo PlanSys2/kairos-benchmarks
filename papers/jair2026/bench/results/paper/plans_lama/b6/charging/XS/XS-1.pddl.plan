@@ -1,0 +1,5 @@
+; cost = 10.001
+; makespan = 10.001
+0.000: (move r0 wp0 wp3) [1.000]
+1.001: (move r0 wp3 wp6) [4.000]
+5.001: (patrol r0 wp6) [5.000]

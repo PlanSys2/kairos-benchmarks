@@ -1,0 +1,14 @@
+; cost = 6
+(break cell8)
+(craft_plank)
+(craft_stick)
+(break cell0)
+(craft_synthetic_pellets)
+(craft_wooden_pogo cell6)
+; better plan 2
+; cost = 5
+(break_brutal cell8)
+(craft_plank)
+(craft_stick)
+(craft_synthetic_pellets)
+(craft_wooden_pogo cell6)

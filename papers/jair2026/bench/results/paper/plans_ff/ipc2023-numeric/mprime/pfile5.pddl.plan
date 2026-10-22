@@ -1,0 +1,20 @@
+; cost = 9
+(feast aesthetics shrimp cherry)
+(feast aesthetics cherry arugula)
+(feast aesthetics arugula wurst)
+(drink scallop wurst)
+(feast aesthetics wurst grapefruit)
+(drink scallop grapefruit)
+(overcome sciatica aesthetics grapefruit)
+(feast aesthetics grapefruit wurst)
+(succumb sciatica aesthetics wurst)
+; better plan 2
+; cost = 8
+(feast aesthetics shrimp cherry)
+(feast aesthetics cherry arugula)
+(feast aesthetics arugula scallop)
+(feast aesthetics scallop grapefruit)
+(drink cherry grapefruit)
+(overcome sciatica aesthetics grapefruit)
+(feast aesthetics grapefruit wurst)
+(succumb sciatica aesthetics wurst)

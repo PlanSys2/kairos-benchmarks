@@ -1,0 +1,5 @@
+(define (domain til) (:requirements :strips :typing :durative-actions :timed-initial-literals)
+ (:types robot)
+ (:predicates (ready ?r - robot) (open ?r - robot) (done ?r - robot))
+ (:durative-action enter :parameters (?r - robot) :duration (= ?duration 1)
+  :condition (and (at start (ready ?r)) (at start (open ?r))) :effect (and (at end (done ?r)))))

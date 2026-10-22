@@ -1,0 +1,6 @@
+; cost = 1
+(do-a r1)
+; better plan 2
+; cost = 0
+(do-a r1)
+(do-b r1)

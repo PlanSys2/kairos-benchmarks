@@ -1,0 +1,4 @@
+; cost = 50
+; makespan = 50.000
+0.000: (increase_throttle) [0.000]
+50.000: @PlanEND

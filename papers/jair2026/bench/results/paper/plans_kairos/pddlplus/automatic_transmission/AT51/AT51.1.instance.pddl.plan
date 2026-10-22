@@ -1,0 +1,7 @@
+; cost = 0.8
+; makespan = 0.800
+0.000: (increase_throttle) [0.000]
+0.500: (decrease_throttle) [0.000]
+0.600: (increase_throttle) [0.000]
+0.700: (decrease_throttle) [0.000]
+0.800: @PlanEND

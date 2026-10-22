@@ -1,0 +1,15 @@
+domain,problem,status,time,steps,cost,expanded,ground_ms,actions,peak_mb
+examples/battery_domain,battery_problem_long.pddl,solved,0.007,0,195.014,433,0.5,153,324
+examples/battery_domain,battery_problem_medium.pddl,solved,0.021,0,199.013,3686,0.2,36,179
+examples/battery_domain,battery_problem_simple.pddl,solved,0.001,0,94.006,14,0.1,7,8
+examples/cooking_cost_domain,cooking_cost_problem_long.pddl,solved,0.054,0,277.034,1027,1.8,902,648
+examples/cooking_cost_domain,cooking_cost_problem_medium.pddl,solved,0.012,0,183.023,241,0.7,259,1777
+examples/cooking_cost_domain,cooking_cost_problem_simple.pddl,solved,0.006,0,44.005,21,0.6,246,1610
+examples/cooking_domain,cooking_problem_huge.pddl,solved,0.349,0,1127.145,6966,5.0,1788,238
+examples/cooking_domain,cooking_problem_long.pddl,solved,0.026,0,343.043,402,1.6,602,345
+examples/cooking_domain,cooking_problem_simple.pddl,solved,0.006,0,59.007,49,0.7,202,44
+examples/domain_simple,domain_simple_problem_1.pddl,solved,0.001,0,15.000,3,0.1,6,8
+examples/elevator_domain,elevator_problem.pddl,solved,0.001,0,9.000,21,0.2,76,16
+examples/factory,factory_problem_1.pddl,solved,0.006,0,54.008,90,0.9,723,89
+examples/road_trip_domain,road_trip_problem.pddl,solved,0.002,0,529.785334,60,0.1,38,9
+examples/suave_domain,suave_problem.pddl,solved,0.007,7,7,28,0.6,41,8

@@ -1,0 +1,6 @@
+(up e0 f0 f2)
+(board q0 e0 f2)
+(board q1 e0 f2)
+(leave q0 e0 f2)
+(down e0 f2 f1)
+(leave q1 e0 f1)

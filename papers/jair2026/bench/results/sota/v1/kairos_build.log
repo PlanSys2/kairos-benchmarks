@@ -1,0 +1,64 @@
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/fmrico/ros/ros2/planner_ws/src/kairos/build-release
+[  5%] Built target kairos_core
+[  6%] Built target kairos_plan
+[  9%] Built target kairos_pddl
+[ 17%] Built target core_tests
+[ 24%] Built target plan_tests
+[ 24%] Built target kairos_semantic
+[ 24%] Built target plan_fuzzer_replay
+[ 27%] Built target lexer_fuzzer_replay
+[ 28%] Built target parser_fuzzer_replay
+[ 34%] Built target pddl_tests
+[ 36%] Built target kairos_validate
+[ 36%] Built target kairos_normalize
+[ 40%] Built target semantic_tests
+[ 43%] Built target kairos_ground
+[ 46%] Built target normalize_tests
+[ 49%] Built target kairos_sas
+[ 52%] Built target ground_tests
+[ 56%] Built target sas_tests
+[ 58%] Built target kairos_state
+[ 62%] Built target state_tests
+[ 62%] Built target kairos_heuristics
+[ 63%] Building CXX object src/temporal/CMakeFiles/kairos_temporal.dir/compress.cpp.o
+[ 66%] Building CXX object tests/heuristics/CMakeFiles/heuristics_tests.dir/heuristics_test.cpp.o
+[ 66%] Building CXX object src/search/CMakeFiles/kairos_search.dir/search.cpp.o
+[ 66%] Building CXX object tests/heuristics/CMakeFiles/heuristics_tests.dir/landmarks_test.cpp.o
+[ 66%] Building CXX object src/search/CMakeFiles/kairos_search.dir/goals.cpp.o
+[ 67%] Linking CXX static library libkairos_temporal.a
+[ 70%] Built target kairos_temporal
+[ 72%] Building CXX object tests/temporal/CMakeFiles/temporal_tests.dir/durations_test.cpp.o
+[ 72%] Building CXX object tests/temporal/CMakeFiles/temporal_tests.dir/compress_test.cpp.o
+[ 73%] Linking CXX static library libkairos_search.a
+[ 73%] Built target kairos_search
+[ 74%] Building CXX object src/orchestrator/CMakeFiles/kairos_orchestrator.dir/orchestrator.cpp.o
+[ 76%] Building CXX object tests/search/CMakeFiles/search_tests.dir/goals_test.cpp.o
+[ 76%] Building CXX object tests/search/CMakeFiles/search_tests.dir/search_test.cpp.o
+[ 77%] Linking CXX executable heuristics_tests
+[ 77%] Built target heuristics_tests
+[ 78%] Linking CXX executable temporal_tests
+[ 80%] Built target temporal_tests
+[ 81%] Linking CXX executable search_tests
+[ 82%] Built target search_tests
+[ 83%] Linking CXX static library libkairos_orchestrator.a
+[ 84%] Built target kairos_orchestrator
+[ 85%] Linking CXX shared library libkairos.so
+[ 88%] Built target kairos
+[ 90%] Linking CXX executable validate_tests
+[ 90%] Linking CXX executable kairos
+[ 91%] Building CXX object tests/api/CMakeFiles/api_tests.dir/check_test.cpp.o
+[ 91%] Building CXX object tests/api/CMakeFiles/api_tests.dir/examples_test.cpp.o
+[ 92%] Building CXX object tests/api/CMakeFiles/api_tests.dir/planner_test.cpp.o
+[ 93%] Building CXX object tests/api/CMakeFiles/api_tests.dir/public_api_test.cpp.o
+[ 95%] Built target kairos_cli
+[ 96%] kairos completion for bash
+[ 96%] kairos completion for zsh
+[ 97%] Linking CXX executable cli_tests
+[ 98%] kairos completion for fish
+[ 99%] Built target validate_tests
+[ 99%] Built target kairos_completion
+[100%] Built target cli_tests
+[100%] Linking CXX executable api_tests
+[100%] Built target api_tests

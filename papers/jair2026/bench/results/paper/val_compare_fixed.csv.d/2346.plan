@@ -1,0 +1,2 @@
+(drive-truck truck20 city15-1 city15-6 city15)
+(unload-truck package3 truck20 city15-6)

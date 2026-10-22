@@ -1,0 +1,12 @@
+domain,problem,status,time,steps,cost,expanded
+examples/cooking_cost_domain,cooking_cost_problem_long.pddl,solved,0.031,0,363.047,434
+examples/cooking_cost_domain,cooking_cost_problem_medium.pddl,solved,0.007,0,183.023,132
+examples/cooking_cost_domain,cooking_cost_problem_simple.pddl,solved,0.006,0,44.005,21
+examples/cooking_domain,cooking_problem_huge.pddl,solved,0.160,0,903.124,3243
+examples/cooking_domain,cooking_problem_long.pddl,solved,0.017,0,343.043,275
+examples/cooking_domain,cooking_problem_simple.pddl,solved,0.006,0,59.007,49
+examples/domain_simple,domain_simple_problem_1.pddl,solved,0.001,0,15.000,3
+examples/elevator_domain,elevator_problem.pddl,solved,0.004,0,9.000,14
+examples/factory,factory_problem_1.pddl,solved,0.009,0,54.008,42
+examples/road_trip_domain,road_trip_problem.pddl,solved,0.001,0,529.785334,14
+examples/suave_domain,suave_problem.pddl,solved,0.026,7,7,21

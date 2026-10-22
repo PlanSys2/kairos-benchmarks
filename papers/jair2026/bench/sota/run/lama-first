@@ -1,0 +1,6 @@
+#!/bin/bash
+# Agile: stops at the first plan (IPC 2023 agile track), DOMAIN PROBLEM -> sas_plan
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+# LAMA's first iteration (Fast Downward of the IPC 2023 Stone Soup)
+exec pypy3 /p/fdss/fast-downward.py --overall-time-limit ${T}s --alias lama-first \
+  --plan-file sas_plan "$1" "$2"

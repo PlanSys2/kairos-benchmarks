@@ -1,0 +1,4 @@
+(pickup b1)
+(stack b1 b2)
+(pickup b3)
+(stack b3 b1)

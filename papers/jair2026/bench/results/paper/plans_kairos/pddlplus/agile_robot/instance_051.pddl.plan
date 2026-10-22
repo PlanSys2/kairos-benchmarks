@@ -1,0 +1,15 @@
+; cost = 53.3
+; makespan = 53.300
+0.000: (decelerate) [0.000]
+0.900: (accelerate) [0.000]
+1.200: (steer_right) [0.000]
+17.200: (step) [0.000]
+53.300: @PlanEND
+; better plan 2
+; cost = 26.3
+; makespan = 26.300
+0.000: (decelerate) [0.000]
+0.600: (steer_left) [0.000]
+3.600: (step) [0.000]
+25.900: (decelerate) [0.000]
+26.300: @PlanEND

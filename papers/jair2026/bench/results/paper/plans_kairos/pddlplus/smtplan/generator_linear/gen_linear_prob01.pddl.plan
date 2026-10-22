@@ -1,0 +1,4 @@
+; cost = 1000.001
+; makespan = 1000.001
+0.000: (generate gen) [1000.000]
+990.000: (refuel gen tank1) [10.001]

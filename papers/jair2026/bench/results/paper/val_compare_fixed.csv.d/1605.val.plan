@@ -1,0 +1,4 @@
+(choose pcaf l1 l0)
+(choose p300 l2 l1)
+(initialize pcaf)
+(initialize p300)

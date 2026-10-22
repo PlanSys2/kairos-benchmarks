@@ -1,0 +1,6 @@
+(reset-counter)
+(get-chips c27)
+(get-dip d27)
+(get-pop p27)
+(get-cheese z27)
+(get-crackers k27)

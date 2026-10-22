@@ -1,0 +1,13 @@
+; cost = 12
+(drive-truck t0 l0-53 l0-254 c0)
+(load-truck p5 t0 l0-254)
+(drive-truck t0 l0-254 l0-73 c0)
+(unload-truck p5 t0 l0-73)
+(drive-truck t0 l0-73 l0-668 c0)
+(load-truck p2 t0 l0-668)
+(drive-truck t0 l0-668 l0-927 c0)
+(unload-truck p2 t0 l0-927)
+(drive-truck t0 l0-927 l0-216 c0)
+(load-truck p1 t0 l0-216)
+(drive-truck t0 l0-216 l0-702 c0)
+(unload-truck p1 t0 l0-702)

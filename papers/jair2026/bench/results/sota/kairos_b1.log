@@ -1,0 +1,60 @@
+20/225
+40/225
+60/225
+80/225
+100/225
+120/225
+140/225
+160/225
+180/225
+200/225
+220/225
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| ipc-2002/depots-time-automatic | 5/5 | 2.94 |
+| ipc-2002/driverlog-time-automatic | 5/5 | 4.98 |
+| ipc-2002/rovers-time-automatic | 4/5 | 4.00 |
+| ipc-2002/satellite-time-automatic | 5/5 | 5.00 |
+| ipc-2002/zenotravel-time-automatic | 5/5 | 5.00 |
+| ipc-2004/airport-temporal-strips | 5/5 | 3.86 |
+| ipc-2004/airport-temporal-time-windows-strips | 3/5 | 2.83 |
+| ipc-2004/pipesworld-no-tankage-temporal-deadlines-strips | 5/5 | 3.60 |
+| ipc-2004/pipesworld-no-tankage-temporal-strips | 5/5 | 5.00 |
+| ipc-2004/satellite-time-strips | 5/5 | 4.43 |
+| ipc-2004/satellite-time-time-windows-strips | 2/5 | 2.00 |
+| ipc-2004/umts-temporal-strips | 5/5 | 5.00 |
+| ipc-2004/umts-temporal-time-windows-strips | 5/5 | 3.70 |
+| ipc-2006/openstacks-time-strips | 5/5 | 5.00 |
+| ipc-2006/pathways-metric-time | 2/5 | 1.92 |
+| ipc-2006/rovers-metric-time | 4/5 | 4.00 |
+| ipc-2006/storage-time | 3/5 | 3.00 |
+| ipc-2006/tpp-metric-time | 1/5 | 1.00 |
+| ipc-2006/trucks-time-constraints-timed-initial-literals | 2/5 | 2.00 |
+| ipc-2006/trucks-time-strips | 5/5 | 5.00 |
+| ipc-2008/crew-planning-temporal-satisficing-strips | 5/5 | 5.00 |
+| ipc-2008/elevator-temporal-satisficing-strips | 5/5 | 5.00 |
+| ipc-2008/model-train-temporal-satisficing-numeric-fluents | 2/5 | 1.82 |
+| ipc-2008/openstacks-temporal-satisficing-strips | 5/5 | 5.00 |
+| ipc-2008/parc-printer-temporal-satisficing-strips | 3/5 | 2.40 |
+| ipc-2008/peg-solitaire-temporal-satisficing-strips | 5/5 | 5.00 |
+| ipc-2008/sokoban-temporal-satisficing-strips | 4/5 | 4.00 |
+| ipc-2008/transport-temporal-satisficing-numeric-fluents | 2/5 | 1.38 |
+| ipc-2008/woodworking-temporal-satisficing-numeric-fluents | 5/5 | 5.00 |
+| ipc-2011/crew-planning-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2011/elevator-temporal-satisficing | 5/5 | 4.76 |
+| ipc-2011/floor-tile-temporal-satisficing | 3/5 | 2.03 |
+| ipc-2011/openstacks-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2011/parc-printer-temporal-satisficing | 3/5 | 2.99 |
+| ipc-2011/parking-temporal-satisficing | 5/5 | 4.81 |
+| ipc-2011/peg-solitaire-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2011/sokoban-temporal-satisficing | 3/5 | 2.03 |
+| ipc-2011/storage-temporal-satisficing | 1/5 | 0.43 |
+| ipc-2014/driver-log-temporal-satisficing | 1/5 | 1.00 |
+| ipc-2014/floor-tile-temporal-satisficing | 2/5 | 0.19 |
+| ipc-2014/map-analyzer-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2014/parking-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2014/road-traffic-accident-management-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2014/satellite-temporal-satisficing | 5/5 | 5.00 |
+| ipc-2014/storage-temporal-satisficing | 3/5 | 1.13 |
+| **total** | **178/225** | **163.22** |

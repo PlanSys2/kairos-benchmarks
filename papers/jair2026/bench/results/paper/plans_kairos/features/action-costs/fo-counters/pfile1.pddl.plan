@@ -1,0 +1,8 @@
+; cost = 3
+(increase_rate c0)
+(increase_rate c1)
+(increment c1)
+; better plan 2
+; cost = 2
+(increase_rate c1)
+(increment c1)

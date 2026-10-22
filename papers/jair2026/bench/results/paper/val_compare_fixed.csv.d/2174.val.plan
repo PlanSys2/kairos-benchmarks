@@ -1,0 +1,8 @@
+0.000: (refuel generator tank1) [9.205]
+0.001: (refuel generator tank2) [9.205]
+0.002: (refuel generator tank3) [9.205]
+0.003: (refuel generator tank4) [9.205]
+0.004: (refuel generator tank5) [9.205]
+0.005: (refuel generator tank6) [9.205]
+9.211: (generate generator) [1000.000]
+1008.711: (refuel generator tank1) [0.501]

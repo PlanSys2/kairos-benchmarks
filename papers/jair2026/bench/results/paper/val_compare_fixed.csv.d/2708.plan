@@ -1,0 +1,6 @@
+0.000: (step) [0.000]
+0.200: (steer_right) [0.000]
+2.200: (decelerate) [0.000]
+2.200: (step) [0.000]
+4.800: (decelerate) [0.000]
+6.000: @PlanEND

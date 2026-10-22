@@ -1,0 +1,5 @@
+; cost = 4
+(drive-truck t0 l0-553 l0-673 c0)
+(load-truck p4 t0 l0-673)
+(drive-truck t0 l0-673 l0-330 c0)
+(unload-truck p4 t0 l0-330)

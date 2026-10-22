@@ -1,0 +1,3 @@
+0.000: (do-saw b0 p2 saw0 cherry smooth) [30.000]
+0.000: (load-highspeed-saw b1 highspeed-saw0) [30.000]
+30.001: (cut-board b1 p1 highspeed-saw0 oak rough) [10.000]

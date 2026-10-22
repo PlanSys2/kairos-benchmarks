@@ -1,0 +1,16 @@
+; cost = 7
+(drink lemon muffin)
+(feast love flounder wurst)
+(drink popover wurst)
+(overcome sciatica love wurst)
+(feast love wurst snickers)
+(feast love snickers apple)
+(succumb sciatica love apple)
+; better plan 2
+; cost = 6
+(drink lemon wurst)
+(feast love flounder wurst)
+(overcome sciatica love wurst)
+(feast love wurst snickers)
+(feast love snickers apple)
+(succumb sciatica love apple)

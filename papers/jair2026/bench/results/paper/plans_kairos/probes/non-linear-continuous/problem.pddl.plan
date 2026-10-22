@@ -1,0 +1,6 @@
+; cost = 0.7
+; makespan = 0.700
+0.000: (grow-on r1) [0.000]
+0.700: (grow-off r1) [0.000]
+0.700: (check r1) [0.000]
+0.700: @PlanEND

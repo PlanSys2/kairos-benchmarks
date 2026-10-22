@@ -2,7 +2,8 @@
 
 The PDDL benchmarks used to develop and evaluate [Kairos](https://github.com/PlanSys2/kairos),
 a planner for robotics. Results of Kairos and other planners on them are in Kairos's
-[benchmark page](https://github.com/PlanSys2/kairos/blob/main/docs/benchmark.md).
+[benchmark page](https://github.com/PlanSys2/kairos/blob/main/docs/benchmark.md). The scripts,
+raw results and plans behind the article on Kairos are in [papers/jair2026](papers/jair2026).
 
 There are two kinds of benchmarks here:
 

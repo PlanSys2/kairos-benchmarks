@@ -1,0 +1,4 @@
+0.000: (go-out hoist0 depot0-2-1 loadarea) [1.000]
+1.001: (lift hoist0 crate0 container-0-0 loadarea container0) [2.000]
+3.002: (go-in hoist0 loadarea depot0-2-1) [1.000]
+4.003: (drop hoist0 crate0 depot0-1-1 depot0-2-1 depot0) [2.000]

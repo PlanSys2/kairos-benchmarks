@@ -1,0 +1,15 @@
+(define (domain oven)
+(:requirements :typing :fluents :durative-actions :duration-inequalities)
+(:types oven)
+(:predicates (idle ?o - oven) (fresh ?o - oven) (baked ?o - oven))
+(:functions (temp ?o - oven) (low ?o - oven) (high ?o - oven))
+(:durative-action heat
+  :parameters (?o - oven)
+  :duration (and (>= ?duration 1) (<= ?duration 30))
+  :condition (and (at start (idle ?o)) (at start (fresh ?o)))
+  :effect (and (at start (not (idle ?o))) (at start (not (fresh ?o))) (at end (idle ?o))
+               (at end (increase (temp ?o) (* 2 ?duration)))))
+(:action take-out
+  :parameters (?o - oven)
+  :precondition (and (idle ?o) (>= (temp ?o) (low ?o)) (<= (temp ?o) (high ?o)))
+  :effect (baked ?o)))

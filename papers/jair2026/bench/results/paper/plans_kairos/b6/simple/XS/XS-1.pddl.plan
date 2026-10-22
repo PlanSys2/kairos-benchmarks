@@ -1,0 +1,4 @@
+; cost = 10.001000000000001
+; makespan = 10.001
+0.000: (askcharge r0 room7 room4) [5.000]
+5.001: (move r0 room4 room5) [5.000]

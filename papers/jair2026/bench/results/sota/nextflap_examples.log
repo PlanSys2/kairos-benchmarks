@@ -1,0 +1,12 @@
+# timeout 30 s, extra args: (none)
+| domain | solved | agile |
+|---|---|---|
+| examples/battery_domain | 0/3 | 0.00 |
+| examples/cooking_cost_domain | 1/3 | 0.02 |
+| examples/cooking_domain | 1/3 | 0.50 |
+| examples/domain_simple | 1/1 | 1.00 |
+| examples/elevator_domain | 1/1 | 1.00 |
+| examples/factory | 0/1 | 0.00 |
+| examples/road_trip_domain | 0/1 | 0.00 |
+| examples/suave_domain | 0/1 | 0.00 |
+| **total** | **4/14** | **2.52** |

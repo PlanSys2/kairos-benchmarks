@@ -1,0 +1,6 @@
+(define (domain tif) (:requirements :strips :typing :durative-actions :fluents :timed-initial-literals)
+ (:types robot)
+ (:predicates (ready ?r - robot) (done ?r - robot))
+ (:functions (level ?r - robot))
+ (:durative-action use :parameters (?r - robot) :duration (= ?duration 1)
+  :condition (and (at start (ready ?r)) (at start (>= (level ?r) 10))) :effect (and (at end (done ?r)))))

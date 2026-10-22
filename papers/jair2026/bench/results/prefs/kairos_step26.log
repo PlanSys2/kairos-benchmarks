@@ -1,0 +1,35 @@
+20/125
+40/125
+60/125
+80/125
+100/125
+120/125
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| ipc-2006/openstacks-preferences-qualitative | 5/5 | 5.00 |
+| ipc-2006/openstacks-preferences-simple | 5/5 | 5.00 |
+| ipc-2006/pathways-preferences-complex | 5/5 | 4.94 |
+| ipc-2006/pathways-preferences-simple | 5/5 | 5.00 |
+| ipc-2006/pipesworld-metric-time-constraints | 0/5 | 0.00 |
+| ipc-2006/pipesworld-preferences-complex | 2/5 | 1.22 |
+| ipc-2006/rovers-metric-preferences-simple | 5/5 | 5.00 |
+| ipc-2006/rovers-preferences-qualitative | 5/5 | 4.83 |
+| ipc-2006/storage-preferences-complex | 0/5 | 0.00 |
+| ipc-2006/storage-preferences-qualitative | 1/5 | 1.00 |
+| ipc-2006/storage-preferences-simple | 3/5 | 2.78 |
+| ipc-2006/storage-preferences-simple-grounded-preferences | 3/5 | 2.89 |
+| ipc-2006/storage-time-constraints | 1/5 | 1.00 |
+| ipc-2006/tpp-metric-time-constraints | 3/5 | 2.22 |
+| ipc-2006/tpp-preferences-complex | 0/5 | 0.00 |
+| ipc-2006/tpp-preferences-qualitative | 4/5 | 3.71 |
+| ipc-2006/tpp-preferences-simple | 5/5 | 5.00 |
+| ipc-2006/tpp-preferences-simple-grounded-preferences | 5/5 | 5.00 |
+| ipc-2006/trucks-preferences-complex | 4/5 | 2.08 |
+| ipc-2006/trucks-preferences-qualitative | 4/5 | 3.16 |
+| ipc-2006/trucks-preferences-simple | 5/5 | 4.90 |
+| ipc-2006/trucks-preferences-simple-grounded | 5/5 | 4.65 |
+| ipc-2006/trucks-preferences-simple-grounded-preferences | 5/5 | 4.88 |
+| ipc-2006/trucks-time-constraints | 2/5 | 1.87 |
+| ipc-2006/trucks-time-constraints-timed-initial-literals | 2/5 | 2.00 |
+| **total** | **84/125** | **78.13** |

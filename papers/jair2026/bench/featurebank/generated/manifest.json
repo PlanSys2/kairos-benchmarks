@@ -1,0 +1,554 @@
+[
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery",
+  "domain": "generated/object-fluents/delivery/domain.pddl",
+  "problem": "generated/object-fluents/delivery/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "elevator",
+  "domain": "generated/object-fluents/elevator/domain.pddl",
+  "problem": "generated/object-fluents/elevator/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "keys",
+  "domain": "generated/object-fluents/keys/domain.pddl",
+  "problem": "generated/object-fluents/keys/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "object-fluents",
+  "family": "delivery-time",
+  "domain": "generated/object-fluents/delivery-time/domain.pddl",
+  "problem": "generated/object-fluents/delivery-time/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "market",
+  "domain": "generated/timed-initial-fluents/market/domain.pddl",
+  "problem": "generated/timed-initial-fluents/market/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "charger",
+  "domain": "generated/timed-initial-fluents/charger/domain.pddl",
+  "problem": "generated/timed-initial-fluents/charger/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p01.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p02.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p03.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p04.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p05.pddl",
+  "solvable": true,
+  "plan": null
+ },
+ {
+  "feature": "timed-initial-fluents",
+  "family": "traffic",
+  "domain": "generated/timed-initial-fluents/traffic/domain.pddl",
+  "problem": "generated/timed-initial-fluents/traffic/p06.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p01.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p01.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p02.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p02.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p03.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p03.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p04.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p04.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p05.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p05.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p06.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/free/p06.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "free",
+  "domain": "generated/warehouse/free/domain.pddl",
+  "problem": "generated/warehouse/free/p07.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p01.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p01.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p02.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p02.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p03.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p03.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p04.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p04.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p05.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p05.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p06.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/capacity/p06.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "capacity",
+  "domain": "generated/warehouse/capacity/domain.pddl",
+  "problem": "generated/warehouse/capacity/p07.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p01.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p01.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p02.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p02.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p03.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p03.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p04.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p04.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p05.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p05.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p06.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/cells/p06.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "cells",
+  "domain": "generated/warehouse/cells/domain.pddl",
+  "problem": "generated/warehouse/cells/p07.pddl",
+  "solvable": false,
+  "plan": null
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p01.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/time/p01.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p02.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/time/p02.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p03.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/time/p03.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p04.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/time/p04.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p05.pddl",
+  "solvable": true,
+  "plan": "generated/warehouse/time/p05.plan"
+ },
+ {
+  "feature": "warehouse",
+  "family": "time",
+  "domain": "generated/warehouse/time/domain.pddl",
+  "problem": "generated/warehouse/time/p06.pddl",
+  "solvable": false,
+  "plan": null
+ }
+]

@@ -1,0 +1,6 @@
+0.000: (assign_route c1 loc_b loc_d) [0.000]
+0.500: (park c1 loc_b loc_d) [0.000]
+0.500: (assign_route c1 loc_d loc_e) [0.000]
+0.800: (park c1 loc_d loc_e) [0.000]
+1.300: (park c1 loc_e loc_g) [0.000]
+1.300: @PlanEND

@@ -1,0 +1,4 @@
+; cost = 5
+; makespan = 5.000
+0.000: (light_match match0) [5.000]
+0.000: (mend_fuse fuse0 match0) [2.000]

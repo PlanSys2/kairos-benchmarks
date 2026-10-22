@@ -1,0 +1,36 @@
+; cost = 74.01
+; makespan = 74.010
+0.000: (move r1 recharge_zone fridge) [5.000]
+5.001: (transport r1 egg fridge kitchen1) [8.000]
+13.002: (move r1 kitchen1 pantry) [5.000]
+18.003: (move r1 pantry kitchen1) [5.000]
+23.004: (move r1 kitchen1 recharge_zone) [5.000]
+28.005: (recharge r1 recharge_zone) [10.000]
+38.006: (move r1 recharge_zone pantry) [5.000]
+43.007: (transport r1 salt pantry kitchen1) [8.000]
+51.008: (move r1 kitchen1 pantry) [5.000]
+56.009: (transport r1 oil pantry kitchen1) [8.000]
+64.010: (cook_omelette r1 kitchen1 egg oil salt omelette1) [10.000]
+; better plan 2
+; cost = 67.008
+; makespan = 67.008
+0.000: (move r1 recharge_zone fridge) [5.000]
+5.001: (transport r1 egg fridge kitchen1) [8.000]
+13.002: (move r1 kitchen1 pantry) [5.000]
+18.003: (transport r1 salt pantry recharge_zone) [8.000]
+26.004: (recharge r1 recharge_zone) [10.000]
+36.005: (transport r1 salt recharge_zone kitchen1) [8.000]
+44.006: (move r1 kitchen1 pantry) [5.000]
+49.007: (transport r1 oil pantry kitchen1) [8.000]
+57.008: (cook_omelette r1 kitchen1 egg oil salt omelette1) [10.000]
+; better plan 3
+; cost = 59.007
+; makespan = 59.007
+0.000: (recharge r1 recharge_zone) [10.000]
+10.001: (move r1 recharge_zone fridge) [5.000]
+15.002: (transport r1 egg fridge kitchen1) [8.000]
+23.003: (move r1 kitchen1 pantry) [5.000]
+28.004: (transport r1 salt pantry kitchen1) [8.000]
+36.005: (move r1 kitchen1 pantry) [5.000]
+41.006: (transport r1 oil pantry kitchen1) [8.000]
+49.007: (cook_omelette r1 kitchen1 egg oil salt omelette1) [10.000]

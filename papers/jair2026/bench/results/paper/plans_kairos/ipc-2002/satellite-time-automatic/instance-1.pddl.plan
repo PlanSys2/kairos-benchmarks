@@ -1,0 +1,40 @@
+; cost = 147.27100000000002
+; makespan = 147.271
+0.000: (switch_on instrument0 satellite0) [2.000]
+0.000: (turn_to satellite0 groundstation2 phenomenon6) [50.730]
+50.731: (calibrate satellite0 instrument0 groundstation2) [5.900]
+50.732: (turn_to satellite0 phenomenon3 groundstation2) [33.940]
+84.673: (turn_to satellite0 star5 phenomenon3) [10.180]
+94.853: (take_image satellite0 star5 instrument0 thermograph0) [7.000]
+101.853: (turn_to satellite0 phenomenon6 star5) [29.320]
+131.173: (take_image satellite0 phenomenon6 instrument0 thermograph0) [7.000]
+138.173: (turn_to satellite0 phenomenon4 phenomenon6) [2.098]
+140.271: (take_image satellite0 phenomenon4 instrument0 thermograph0) [7.000]
+; better plan 2
+; cost = 136.452
+; makespan = 136.452
+0.000: (turn_to satellite0 phenomenon3 phenomenon6) [14.750]
+0.000: (switch_on instrument0 satellite0) [2.000]
+14.751: (turn_to satellite0 groundstation2 phenomenon3) [33.940]
+48.692: (calibrate satellite0 instrument0 groundstation2) [5.900]
+48.693: (turn_to satellite0 phenomenon4 groundstation2) [39.730]
+88.423: (take_image satellite0 phenomenon4 instrument0 thermograph0) [7.000]
+95.423: (turn_to satellite0 phenomenon6 phenomenon4) [2.098]
+97.521: (take_image satellite0 phenomenon6 instrument0 thermograph0) [7.000]
+104.521: (turn_to satellite0 phenomenon3 phenomenon6) [14.750]
+119.272: (turn_to satellite0 star5 phenomenon3) [10.180]
+129.452: (take_image satellite0 star5 instrument0 thermograph0) [7.000]
+; better plan 3
+; cost = 129.58999999999997
+; makespan = 129.590
+0.000: (switch_on instrument0 satellite0) [2.000]
+0.000: (turn_to satellite0 phenomenon4 phenomenon6) [2.098]
+2.099: (turn_to satellite0 groundstation2 phenomenon4) [39.730]
+41.830: (calibrate satellite0 instrument0 groundstation2) [5.900]
+41.831: (turn_to satellite0 phenomenon4 groundstation2) [39.730]
+81.561: (take_image satellite0 phenomenon4 instrument0 thermograph0) [7.000]
+88.561: (turn_to satellite0 phenomenon6 phenomenon4) [2.098]
+90.659: (take_image satellite0 phenomenon6 instrument0 thermograph0) [7.000]
+97.659: (turn_to satellite0 phenomenon3 phenomenon6) [14.750]
+112.410: (turn_to satellite0 star5 phenomenon3) [10.180]
+122.590: (take_image satellite0 star5 instrument0 thermograph0) [7.000]

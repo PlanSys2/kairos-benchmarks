@@ -1,0 +1,59 @@
+20/144
+40/144
+60/144
+80/144
+100/144
+120/144
+140/144
+# timeout 60 s, extra args: (none)
+| domain | solved | agile |
+|---|---|---|
+| b6/charging/L | 0/3 | 0.00 |
+| b6/charging/M | 0/3 | 0.00 |
+| b6/charging/S | 3/3 | 0.73 |
+| b6/charging/XL | 0/3 | 0.00 |
+| b6/charging/XS | 3/3 | 2.89 |
+| b6/charging/XXL | 0/3 | 0.00 |
+| b6/cooking/L | 0/3 | 0.00 |
+| b6/cooking/M | 0/3 | 0.00 |
+| b6/cooking/S | 0/3 | 0.00 |
+| b6/cooking/XL | 0/3 | 0.00 |
+| b6/cooking/XS | 0/3 | 0.00 |
+| b6/cooking/XXL | 0/3 | 0.00 |
+| b6/elevator/L | 0/3 | 0.00 |
+| b6/elevator/M | 0/3 | 0.00 |
+| b6/elevator/S | 0/3 | 0.00 |
+| b6/elevator/XL | 0/3 | 0.00 |
+| b6/elevator/XS | 0/3 | 0.00 |
+| b6/elevator/XXL | 0/3 | 0.00 |
+| b6/factory/L | 0/3 | 0.00 |
+| b6/factory/M | 0/3 | 0.00 |
+| b6/factory/S | 0/3 | 0.00 |
+| b6/factory/XL | 0/3 | 0.00 |
+| b6/factory/XS | 3/3 | 2.87 |
+| b6/factory/XXL | 0/3 | 0.00 |
+| b6/patrol/L | 0/3 | 0.00 |
+| b6/patrol/M | 0/3 | 0.00 |
+| b6/patrol/S | 0/3 | 0.00 |
+| b6/patrol/XL | 0/3 | 0.00 |
+| b6/patrol/XS | 3/3 | 2.87 |
+| b6/patrol/XXL | 0/3 | 0.00 |
+| b6/road_trip/L | 0/3 | 0.00 |
+| b6/road_trip/M | 0/3 | 0.00 |
+| b6/road_trip/S | 0/3 | 0.00 |
+| b6/road_trip/XL | 0/3 | 0.00 |
+| b6/road_trip/XS | 0/3 | 0.00 |
+| b6/road_trip/XXL | 0/3 | 0.00 |
+| b6/simple/L | 0/3 | 0.00 |
+| b6/simple/M | 3/3 | 1.51 |
+| b6/simple/S | 3/3 | 2.69 |
+| b6/simple/XL | 0/3 | 0.00 |
+| b6/simple/XS | 3/3 | 2.88 |
+| b6/simple/XXL | 0/3 | 0.00 |
+| b6/suave/L | 0/3 | 0.00 |
+| b6/suave/M | 0/3 | 0.00 |
+| b6/suave/S | 0/3 | 0.00 |
+| b6/suave/XL | 0/3 | 0.00 |
+| b6/suave/XS | 0/3 | 0.00 |
+| b6/suave/XXL | 0/3 | 0.00 |
+| **total** | **21/144** | **16.44** |

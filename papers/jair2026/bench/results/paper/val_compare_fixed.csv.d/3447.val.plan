@@ -1,0 +1,4 @@
+(transport r0 wheel0 z1 z0)
+(move r0 z0 z1)
+(transport r0 steering0 z1 z0)
+(assemble r0 z0 wheel0 body0 steering0 car0)

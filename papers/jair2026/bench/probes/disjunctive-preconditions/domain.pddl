@@ -1,0 +1,6 @@
+(define (domain dp) (:requirements :strips :typing :disjunctive-preconditions)
+ (:types robot)
+ (:predicates (ready ?r - robot) (left ?r - robot) (right ?r - robot) (done ?r - robot))
+ (:action go-right :parameters (?r - robot) :precondition (and (ready ?r)) :effect (and (right ?r)))
+ (:action finish :parameters (?r - robot) :precondition (and (or (left ?r) (right ?r)))
+  :effect (and (done ?r))))

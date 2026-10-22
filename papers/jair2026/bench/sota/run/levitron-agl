@@ -1,0 +1,25 @@
+#!/bin/bash
+# Agile: stops at the first plan (IPC 2023 agile track), DOMAIN PROBLEM -> sas_plan
+T=$(( ${KAIROS_TIMEOUT:-30} - 2 ))
+export CPDDL_BIN=/p/maidu/ext/cpddl/bin POWERLIFTED_IPC=/p/maidu/ext/powerlifted
+export PATH=$PATH:/p/maidu/ext/clingo
+start=$(date +%s)
+pypy3 /p/maidu/fast-downward.py --overall-time-limit ${T}s --translate-time-limit $(( T / 2 ))s \
+  --alias seq-agl-maidu --portfolio-single-plan --plan-file sas_plan "$1" "$2" \
+  --translate-options --invariant-generation-max-candidates 0 && exit 0
+left=$(( T - ($(date +%s) - start) ))
+[ $left -gt 0 ] || exit 1
+exec pypy3 /p/maidu/ext/powerlifted/powerlifted.py -d "$1" -i "$2" --plan-file sas_plan \
+  --iteration alt-bfws1,ff,yannakakis,1 --iteration bfws1,blind,yannakakis,1 \
+  --iteration lazy-po,add,yannakakis,2 --iteration bfws1,blind,yannakakis,2 \
+  --iteration lazy-po,ff,yannakakis,3 --iteration alt-bfws1,ff,yannakakis,9 \
+  --iteration bfws2,blind,yannakakis,9 --iteration lazy-po,ff,yannakakis,9 \
+  --iteration alt-bfws1,add,yannakakis,17 --iteration bfws2,blind,yannakakis,35 \
+  --iteration lazy-prune,ff,yannakakis,23 --iteration lazy-po,add,yannakakis,5 \
+  --iteration alt-bfws1,ff,yannakakis,40 --iteration gbfs,add,yannakakis,3 \
+  --iteration lazy-prune,add,yannakakis,30 --iteration bfws1,blind,yannakakis,47 \
+  --iteration lazy-po,rff,yannakakis,9 --iteration gbfs,rff,yannakakis,6 \
+  --iteration alt-bfws2,rff,yannakakis,7 --iteration gbfs,add,yannakakis,7 \
+  --iteration lazy-po,add,yannakakis,7 --iteration gbfs,rff,yannakakis,9 \
+  --iteration alt-bfws1,rff,yannakakis,10 --unit-cost --preprocess-task \
+  --only-effects-novelty-check --stop-after-first-plan --time-limit $left

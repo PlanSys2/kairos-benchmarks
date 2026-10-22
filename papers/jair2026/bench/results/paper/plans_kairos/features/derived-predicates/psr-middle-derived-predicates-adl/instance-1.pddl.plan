@@ -1,0 +1,5 @@
+; cost = 4
+(wait)
+(open sd7)
+(open sd11)
+(close sd3)

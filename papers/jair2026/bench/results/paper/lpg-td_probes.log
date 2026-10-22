@@ -1,0 +1,31 @@
+20/26
+# timeout 10 s, extra args: (none)
+| domain | solved | agile |
+|---|---|---|
+| probes/conditional-effects | 0/1 | 0.00 |
+| probes/conditional-effects@durative | 0/1 | 0.00 |
+| probes/continuous-effects | 0/1 | 0.00 |
+| probes/derived-predicates | 1/1 | 1.00 |
+| probes/derived-predicates@durative | 1/1 | 1.00 |
+| probes/disjunctive-preconditions | 1/1 | 1.00 |
+| probes/disjunctive-preconditions@durative | 1/1 | 1.00 |
+| probes/duration-inequalities | 0/1 | 0.00 |
+| probes/durative-actions | 1/1 | 1.00 |
+| probes/non-linear-continuous | 0/1 | 0.00 |
+| probes/non-linear-numeric | 1/1 | 1.00 |
+| probes/non-linear-numeric@durative | 1/1 | 1.00 |
+| probes/numeric-fluents | 1/1 | 1.00 |
+| probes/numeric-fluents@durative | 1/1 | 1.00 |
+| probes/object-fluents | 0/1 | 0.00 |
+| probes/object-fluents@durative | 0/1 | 0.00 |
+| probes/preferences | 0/1 | 0.00 |
+| probes/preferences@durative | 0/1 | 0.00 |
+| probes/processes-events | 0/1 | 0.00 |
+| probes/quantified-preconditions | 1/1 | 1.00 |
+| probes/quantified-preconditions@durative | 1/1 | 1.00 |
+| probes/required-concurrency | 0/1 | 0.00 |
+| probes/timed-initial-fluents | 0/1 | 0.00 |
+| probes/timed-initial-literals | 1/1 | 1.00 |
+| probes/trajectory-constraints | 0/1 | 0.00 |
+| probes/trajectory-constraints@durative | 0/1 | 0.00 |
+| **total** | **12/26** | **12.00** |

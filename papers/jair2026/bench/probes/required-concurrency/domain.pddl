@@ -1,0 +1,8 @@
+(define (domain rc) (:requirements :strips :typing :durative-actions)
+ (:types robot)
+ (:predicates (match ?r - robot) (light ?r - robot) (mended ?r - robot))
+ (:durative-action light-match :parameters (?r - robot) :duration (= ?duration 5)
+  :condition (and (at start (match ?r)))
+  :effect (and (at start (not (match ?r))) (at start (light ?r)) (at end (not (light ?r)))))
+ (:durative-action mend :parameters (?r - robot) :duration (= ?duration 2)
+  :condition (and (over all (light ?r))) :effect (and (at end (mended ?r)))))

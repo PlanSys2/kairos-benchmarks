@@ -1,0 +1,5 @@
+; cost = 2.001
+; makespan = 2.001
+0.000: (open-box r1 b1) [1.000]
+0.000: (open-box r1 b2) [1.000]
+1.001: (finish r1) [1.000]

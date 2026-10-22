@@ -1,0 +1,2 @@
+(move r1 a b)
+(finish r1 b)

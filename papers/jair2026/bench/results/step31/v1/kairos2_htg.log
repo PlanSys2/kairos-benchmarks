@@ -1,0 +1,76 @@
+20/287
+40/287
+60/287
+80/287
+100/287
+120/287
+140/287
+160/287
+180/287
+200/287
+220/287
+240/287
+260/287
+280/287
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| htg/blocksworld-large-simple/goal-2 | 5/5 | 3.53 |
+| htg/blocksworld-large-simple/goal-3 | 5/5 | 2.65 |
+| htg/blocksworld-large-simple/goal-4 | 5/5 | 1.66 |
+| htg/blocksworld-large-simple/goal-5 | 3/5 | 1.78 |
+| htg/childsnack-contents/parsize1-cham3 | 5/5 | 5.00 |
+| htg/childsnack-contents/parsize1-cham5 | 5/5 | 5.00 |
+| htg/childsnack-contents/parsize1-cham7 | 5/5 | 5.00 |
+| htg/childsnack-contents/parsize2-cham3 | 5/5 | 5.00 |
+| htg/childsnack-contents/parsize2-cham5 | 5/5 | 4.47 |
+| htg/childsnack-contents/parsize2-cham7 | 3/5 | 2.27 |
+| htg/childsnack-contents/parsize3-cham3 | 5/5 | 4.98 |
+| htg/childsnack-contents/parsize3-cham5 | 3/5 | 1.95 |
+| htg/childsnack-contents/parsize3-cham7 | 1/5 | 0.68 |
+| htg/childsnack-contents/parsize4-cham3 | 5/5 | 3.60 |
+| htg/childsnack-contents/parsize4-cham5 | 1/5 | 0.33 |
+| htg/childsnack-contents/parsize4-cham7 | 0/5 | 0.00 |
+| htg/genome-edit-distance | 5/5 | 2.38 |
+| htg/genome-edit-distance-positional | 1/5 | 1.00 |
+| htg/genome-edit-distance-split | 5/5 | 3.25 |
+| htg/gnad-et-al-aaai19-large-instances/agricola-large | 5/5 | 4.09 |
+| htg/gnad-et-al-aaai19-large-instances/blocks-large | 0/5 | 0.00 |
+| htg/gnad-et-al-aaai19-large-instances/caldera-large | 0/5 | 0.00 |
+| htg/gnad-et-al-aaai19-large-instances/depots-large | 0/5 | 0.00 |
+| htg/gnad-et-al-aaai19-large-instances/satellite-large | 0/5 | 0.00 |
+| htg/gnad-et-al-aaai19-large-instances/tpp-large | 2/5 | 1.33 |
+| htg/labyrinth/OPT | 2/5 | 1.97 |
+| htg/labyrinth/SAT | 0/5 | 0.00 |
+| htg/logistics | 2/2 | 2.00 |
+| htg/logistics-large-simple/goal-1 | 5/5 | 5.00 |
+| htg/logistics-large-simple/goal-2 | 5/5 | 5.00 |
+| htg/logistics-large-simple/goal-3 | 5/5 | 5.00 |
+| htg/logistics-large-simple/goal-4 | 5/5 | 5.00 |
+| htg/organic-synthesis-MIT | 5/5 | 3.86 |
+| htg/organic-synthesis-alkene | 5/5 | 5.00 |
+| htg/organic-synthesis-original | 3/5 | 1.76 |
+| htg/pipesworld-tankage-nosplit | 4/5 | 2.80 |
+| htg/rovers-large-simple/goal-2 | 5/5 | 4.92 |
+| htg/rovers-large-simple/goal-4 | 5/5 | 4.92 |
+| htg/rovers-large-simple/goal-6 | 5/5 | 4.86 |
+| htg/rovers-large-simple/goal-8 | 5/5 | 4.60 |
+| htg/visitall-multidimensional/3-dim-visitall-CLOSE-g1 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/3-dim-visitall-CLOSE-g2 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/3-dim-visitall-CLOSE-g3 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/3-dim-visitall-FAR-g1 | 5/5 | 3.04 |
+| htg/visitall-multidimensional/3-dim-visitall-FAR-g2 | 5/5 | 3.17 |
+| htg/visitall-multidimensional/3-dim-visitall-FAR-g3 | 4/5 | 3.14 |
+| htg/visitall-multidimensional/4-dim-visitall-CLOSE-g1 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/4-dim-visitall-CLOSE-g2 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/4-dim-visitall-CLOSE-g3 | 4/5 | 4.00 |
+| htg/visitall-multidimensional/4-dim-visitall-FAR-g1 | 3/5 | 2.20 |
+| htg/visitall-multidimensional/4-dim-visitall-FAR-g2 | 3/5 | 2.20 |
+| htg/visitall-multidimensional/4-dim-visitall-FAR-g3 | 3/5 | 2.18 |
+| htg/visitall-multidimensional/5-dim-visitall-CLOSE-g1 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/5-dim-visitall-CLOSE-g2 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/5-dim-visitall-CLOSE-g3 | 5/5 | 5.00 |
+| htg/visitall-multidimensional/5-dim-visitall-FAR-g1 | 2/5 | 1.35 |
+| htg/visitall-multidimensional/5-dim-visitall-FAR-g2 | 2/5 | 1.15 |
+| htg/visitall-multidimensional/5-dim-visitall-FAR-g3 | 2/5 | 1.10 |
+| **total** | **213/287** | **180.16** |

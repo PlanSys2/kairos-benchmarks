@@ -1,0 +1,7 @@
+(define (domain di) (:requirements :strips :typing :durative-actions :fluents :duration-inequalities)
+ (:types robot)
+ (:predicates (ready ?r - robot) (charged ?r - robot))
+ (:functions (charge ?r - robot))
+ (:durative-action recharge :parameters (?r - robot) :duration (and (>= ?duration 1) (<= ?duration 10))
+  :condition (and (at start (ready ?r)))
+  :effect (and (at start (not (ready ?r))) (at end (increase (charge ?r) ?duration)) (at end (charged ?r)))))

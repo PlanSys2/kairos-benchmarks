@@ -1,0 +1,6 @@
+; cost = 10.3
+; makespan = 10.300
+0.000: (increase_launch_speed) [0.000]
+9.900: (launch bird_0) [0.000]
+10.300: (tackle vampire_0 bird_0) [0.000]
+10.300: @PlanEND

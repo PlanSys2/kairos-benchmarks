@@ -1,0 +1,43 @@
+[  5%] Built target kairos_core
+[  7%] Built target kairos_plan
+[ 11%] Built target kairos_pddl
+[ 18%] Built target core_tests
+[ 21%] Built target plan_tests
+[ 24%] Built target lexer_fuzzer_replay
+[ 26%] Built target parser_fuzzer_replay
+[ 27%] Built target plan_fuzzer_replay
+[ 30%] Built target kairos_semantic
+[ 36%] Built target pddl_tests
+[ 38%] Built target kairos_normalize
+[ 38%] Built target kairos_validate
+[ 42%] Built target semantic_tests
+[ 45%] Built target kairos_ground
+[ 47%] Built target normalize_tests
+[ 51%] Built target kairos_sas
+[ 53%] Built target ground_tests
+[ 57%] Built target kairos_state
+[ 59%] Built target sas_tests
+[ 62%] Built target state_tests
+[ 65%] Built target kairos_temporal
+[ 68%] Built target kairos_heuristics
+[ 71%] Building CXX object tests/heuristics/CMakeFiles/heuristics_tests.dir/heuristics_test.cpp.o
+[ 71%] Building CXX object tests/heuristics/CMakeFiles/heuristics_tests.dir/landmarks_test.cpp.o
+[ 73%] Built target kairos_search
+[ 78%] Built target temporal_tests
+[ 80%] Built target kairos_orchestrator
+[ 81%] Linking CXX executable search_tests
+[ 84%] Built target kairos
+[ 86%] Linking CXX executable api_tests
+[ 87%] Linking CXX executable validate_tests
+[ 88%] Built target kairos_cli
+[ 90%] kairos completion for bash
+[ 90%] kairos completion for zsh
+[ 91%] Linking CXX executable cli_tests
+[ 91%] kairos completion for fish
+[ 91%] Built target kairos_completion
+[ 94%] Built target search_tests
+[ 95%] Built target validate_tests
+[ 96%] Built target cli_tests
+[ 99%] Built target api_tests
+[100%] Linking CXX executable heuristics_tests
+[100%] Built target heuristics_tests

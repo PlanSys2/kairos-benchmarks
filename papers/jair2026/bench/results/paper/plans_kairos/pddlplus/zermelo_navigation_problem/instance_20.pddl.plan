@@ -1,0 +1,13 @@
+; cost = 1949.4
+; makespan = 1949.400
+0.000: (full_sail_ahead the_boat) [0.000]
+896.600: (wheel_to_starboard the_boat) [0.000]
+1522.500: (full_sail_ahead the_boat) [0.000]
+1949.400: @PlanEND
+; better plan 2
+; cost = 1334.3
+; makespan = 1334.300
+767.000: (full_sail_ahead the_boat) [0.000]
+767.000: (wheel_to_port the_boat) [0.000]
+847.800: (full_sail_ahead the_boat) [0.000]
+1334.300: @PlanEND

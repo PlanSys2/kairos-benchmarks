@@ -1,0 +1,11 @@
+; cost = 1019.8
+; makespan = 1019.800
+0.000: (refuel gen tank3) [10.000]
+9.900: (refuel gen tank2) [10.000]
+19.800: (generate gen) [1000.000]
+; better plan 2
+; cost = 1009.9019999999999
+; makespan = 1009.902
+0.000: (refuel gen tank3) [10.001]
+0.001: (refuel gen tank2) [10.001]
+9.901: (generate gen) [1000.001]

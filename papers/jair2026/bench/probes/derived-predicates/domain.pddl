@@ -1,0 +1,7 @@
+(define (domain dr) (:requirements :strips :typing :derived-predicates)
+ (:types robot node)
+ (:predicates (edge ?x ?y - node) (at ?r - robot ?x - node) (reach ?r - robot ?x - node))
+ (:derived (reach ?r - robot ?y - node)
+  (or (at ?r ?y) (exists (?x - node) (and (reach ?r ?x) (edge ?x ?y)))))
+ (:action build :parameters (?r - robot ?x ?y - node) :precondition (and (reach ?r ?x))
+  :effect (and (edge ?x ?y))))

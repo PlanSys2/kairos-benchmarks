@@ -1,0 +1,3 @@
+; cost = 2
+(do-a r1)
+(do-b r1)

@@ -1,0 +1,6 @@
+; cost = 20.003
+; makespan = 20.003
+0.000: (move r0 room32 room31) [5.000]
+5.001: (move r0 room31 room30) [5.000]
+10.002: (move r0 room30 room29) [5.000]
+15.003: (move r0 room29 room28) [5.000]

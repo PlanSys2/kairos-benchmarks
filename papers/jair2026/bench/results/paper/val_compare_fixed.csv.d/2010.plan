@@ -1,0 +1,7 @@
+0.000: (start_refueling gen_1 tank_5) [0.000]
+0.100: (turn_on gen_1) [0.000]
+889.800: (start_refueling gen_1 tank_4) [0.000]
+889.900: (start_refueling gen_1 tank_3) [0.000]
+889.900: (start_refueling gen_1 tank_2) [0.000]
+888.900: (start_refueling gen_1 tank_1) [0.000]
+1000.100: @PlanEND

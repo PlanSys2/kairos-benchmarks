@@ -1,0 +1,6 @@
+(wait)
+(open sd11)
+(close cb3)
+(open sd23)
+(open sd24)
+(close cb5)

@@ -1,0 +1,47 @@
+; cost = 24.004
+; makespan = 24.004
+0.000: (move-up e1 n1 n2) [1.500]
+1.500: (board p1 n2 e1) [2.000]
+1.500: (board p2 n2 e1) [3.000]
+4.500: (move-down e1 n2 n1) [1.500]
+6.000: (leave p1 n1 e1) [2.000]
+6.000: (leave p2 n1 e1) [3.000]
+9.000: (move-up e1 n1 n2) [1.500]
+10.501: (move-up e1 n2 n3) [2.000]
+12.502: (move-up e1 n3 n4) [2.000]
+14.502: (board p3 n4 e1) [2.000]
+16.502: (move-down e1 n4 n3) [2.000]
+18.503: (move-down e1 n3 n2) [2.000]
+20.504: (move-down e1 n2 n1) [1.500]
+22.004: (leave p3 n1 e1) [2.000]
+; better plan 2
+; cost = 12.667666666666666
+; makespan = 12.668
+0.000: (move-up e1 n1 n2) [1.500]
+0.000: (move-down e2 n5 n4) [1.000]
+1.000: (board p3 n4 e2) [2.000]
+1.501: (move-up e1 n2 n3) [2.000]
+3.000: (move-down e2 n4 n3) [1.333]
+3.502: (move-up e1 n3 n4) [2.000]
+4.334: (move-down e2 n3 n2) [1.333]
+5.668: (board p2 n2 e2) [3.000]
+5.668: (board p1 n2 e2) [2.000]
+8.668: (move-down e2 n2 n1) [1.000]
+9.668: (leave p2 n1 e2) [3.000]
+9.668: (leave p3 n1 e2) [2.000]
+9.668: (leave p1 n1 e2) [2.000]
+; better plan 3
+; cost = 9
+; makespan = 9.000
+0.000: (move-down e2 n5 n4) [1.000]
+0.000: (move-up e1 n1 n2) [1.500]
+1.000: (board p3 n4 e2) [2.000]
+1.500: (board p1 n2 e1) [2.000]
+1.500: (board p2 n2 e1) [3.000]
+3.000: (move-down e2 n4 n3) [1.333]
+4.334: (move-down e2 n3 n2) [1.333]
+4.500: (move-down e1 n2 n1) [1.500]
+5.669: (move-down e2 n2 n1) [1.000]
+6.000: (leave p2 n1 e1) [3.000]
+6.000: (leave p1 n1 e1) [2.000]
+6.669: (leave p3 n1 e2) [2.000]

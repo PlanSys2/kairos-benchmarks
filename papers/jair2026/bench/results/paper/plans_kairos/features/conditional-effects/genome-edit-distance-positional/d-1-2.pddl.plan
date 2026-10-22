@@ -1,0 +1,2 @@
+; cost = 1
+(invert p1 p1)

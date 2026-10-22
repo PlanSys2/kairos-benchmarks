@@ -1,0 +1,15 @@
+(define (domain tank)
+(:requirements :typing :fluents :durative-actions :duration-inequalities)
+(:types tank)
+(:predicates (closed ?t - tank) (unused ?t - tank) (ready ?t - tank))
+(:functions (level ?t - tank) (flow ?t - tank) (low ?t - tank) (high ?t - tank))
+(:durative-action fill
+  :parameters (?t - tank)
+  :duration (and (>= ?duration 1) (<= ?duration 50))
+  :condition (and (at start (closed ?t)) (at start (unused ?t)))
+  :effect (and (at start (not (closed ?t))) (at start (not (unused ?t))) (at end (closed ?t))
+               (increase (level ?t) (* #t (flow ?t)))))
+(:action seal
+  :parameters (?t - tank)
+  :precondition (and (closed ?t) (>= (level ?t) (low ?t)) (<= (level ?t) (high ?t)))
+  :effect (ready ?t)))

@@ -1,0 +1,8 @@
+(define (domain of) (:requirements :strips :typing :object-fluents)
+ (:types robot place)
+ (:predicates (link ?a ?b - place) (arrived ?r - robot))
+ (:functions (loc ?r - robot) - place)
+ (:action move :parameters (?r - robot ?a ?b - place) :precondition (and (= (loc ?r) ?a) (link ?a ?b))
+  :effect (and (assign (loc ?r) ?b)))
+ (:action finish :parameters (?r - robot ?b - place) :precondition (and (= (loc ?r) ?b) (link ?b ?b))
+  :effect (and (arrived ?r))))

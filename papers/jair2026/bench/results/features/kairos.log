@@ -1,0 +1,114 @@
+20/450
+40/450
+60/450
+80/450
+100/450
+120/450
+140/450
+160/450
+180/450
+200/450
+220/450
+240/450
+260/450
+280/450
+300/450
+320/450
+340/450
+360/450
+380/450
+400/450
+420/450
+440/450
+# timeout 30 s, extra args: --threads 1
+| domain | solved | agile |
+|---|---|---|
+| features/action-costs/fo-counters | 2/5 | 1.39 |
+| features/action-costs/folding | 3/5 | 2.17 |
+| features/action-costs/genome-edit-distance | 5/5 | 3.48 |
+| features/action-costs/labyrinth | 2/5 | 2.00 |
+| features/action-costs/tpp-metric | 2/5 | 2.00 |
+| features/action-costs/ztalloc-sum | 0/5 | 0.00 |
+| features/conditional-effects/caldera-large | 0/5 | 0.00 |
+| features/conditional-effects/genome-edit-distance-positional | 2/5 | 1.05 |
+| features/conditional-effects/logistics-round-1-adl | 4/5 | 3.64 |
+| features/conditional-effects/movie-round-1-adl | 5/5 | 5.00 |
+| features/conditional-effects/recharging-robots | 3/5 | 2.92 |
+| features/conditional-effects/rubiks-cube | 1/5 | 1.00 |
+| features/continuous-effects/1D-powered-descent | 4/5 | 4.00 |
+| features/continuous-effects/agile_robot | 5/5 | 3.72 |
+| features/continuous-effects/car_nodrag | 5/5 | 4.12 |
+| features/continuous-effects/charger | 5/5 | 5.00 |
+| features/continuous-effects/drill | 5/5 | 5.00 |
+| features/continuous-effects/generator_events | 5/5 | 5.00 |
+| features/derived-predicates/promela-dining-philosophers-derived-predicates-adl | 5/5 | 4.50 |
+| features/derived-predicates/promela-dining-philosophers-fluents-derived-predicates-adl | 5/5 | 4.45 |
+| features/derived-predicates/promela-optical-telegraph-derived-predicates-adl | 2/5 | 1.43 |
+| features/derived-predicates/promela-optical-telegraph-fluents-derived-predicates-adl | 5/5 | 4.02 |
+| features/derived-predicates/psr-large-derived-predicates-adl | 3/5 | 2.63 |
+| features/derived-predicates/psr-middle-derived-predicates-adl | 4/5 | 3.32 |
+| features/disjunctive-preconditions/automatic_transmission | 0/5 | 0.00 |
+| features/disjunctive-preconditions/block-grouping | 4/5 | 2.76 |
+| features/disjunctive-preconditions/chasing_cars | 2/5 | 1.53 |
+| features/disjunctive-preconditions/elevator-adl-full-typed | 5/5 | 5.00 |
+| features/disjunctive-preconditions/sailing-wind-opt | 2/5 | 1.07 |
+| features/duration-in-effects/model-train-temporal-satisficing-numeric-fluents | 1/1 | 1.00 |
+| features/duration-in-effects/oven | 5/5 | 5.00 |
+| features/duration-in-effects/rovers-metric-time | 4/5 | 4.00 |
+| features/duration-in-effects/rovers-time-automatic | 5/5 | 4.25 |
+| features/duration-inequalities/generator_toricelli | 4/5 | 3.67 |
+| features/duration-inequalities/tank | 5/5 | 5.00 |
+| features/duration-inequalities/window | 5/5 | 5.00 |
+| features/durative-actions/MatchCellar | 5/5 | 5.00 |
+| features/durative-actions/depots-time-automatic | 3/5 | 2.91 |
+| features/durative-actions/driverlog-time-automatic | 4/5 | 4.00 |
+| features/durative-actions/temporal_plant_watering | 5/5 | 5.00 |
+| features/equality/farmland | 5/5 | 5.00 |
+| features/equality/mystery-prime-round-1-strips | 5/5 | 5.00 |
+| features/equality/parsize2-cham3 | 5/5 | 5.00 |
+| features/equality/rainbowttles-opt | 5/5 | 5.00 |
+| features/existential-preconditions/storage-preferences-complex | 1/5 | 1.00 |
+| features/existential-preconditions/tpp-metric-time-constraints | 3/5 | 2.37 |
+| features/existential-preconditions/umtranslog-2-numeric-hand-coded | 1/5 | 1.00 |
+| features/global-constraints/car | 5/5 | 5.00 |
+| features/global-constraints/generator | 5/5 | 5.00 |
+| features/global-constraints/hasp | 0/5 | 0.00 |
+| features/global-constraints/hvac | 4/5 | 2.22 |
+| features/metric-fluents/convoys | 5/5 | 5.00 |
+| features/metric-total-time/depots-numeric-hand-coded | 0/5 | 0.00 |
+| features/metric-total-time/driverlog-numeric-automatic | 5/5 | 4.48 |
+| features/metric/coins | 5/5 | 5.00 |
+| features/metric/delivery | 5/5 | 4.45 |
+| features/metric/depots-numeric-automatic | 3/5 | 2.33 |
+| features/negative-preconditions/2048 | 5/5 | 4.62 |
+| features/negative-preconditions/no_tils | 0/5 | 0.00 |
+| features/non-linear-numeric/car_nl | 5/5 | 5.00 |
+| features/object-fluents/delivery | 4/6 | 3.97 |
+| features/object-fluents/delivery-time | 4/6 | 4.00 |
+| features/object-fluents/elevator | 5/6 | 5.00 |
+| features/object-fluents/keys | 5/6 | 4.89 |
+| features/preferences/openstacks-preferences-qualitative | 5/5 | 5.00 |
+| features/preferences/pathways-preferences-complex | 5/5 | 5.00 |
+| features/preferences/pipesworld-preferences-complex | 2/5 | 1.13 |
+| features/preferences/rovers-metric-preferences-simple | 5/5 | 5.00 |
+| features/preferences/tpp-preferences-complex | 0/5 | 0.00 |
+| features/timed-initial-fluents/charger | 5/6 | 5.00 |
+| features/timed-initial-fluents/market | 4/6 | 3.76 |
+| features/timed-initial-fluents/traffic | 5/6 | 4.19 |
+| features/timed-initial-literals/airport-temporal-time-windows-adl | 1/5 | 1.00 |
+| features/timed-initial-literals/pipesworld-no-tankage-temporal-deadlines-strips | 4/5 | 3.15 |
+| features/timed-initial-literals/satellite-complex-time-windows-strips | 1/5 | 1.00 |
+| features/timed-initial-literals/temporal_sailing | 5/5 | 4.86 |
+| features/trajectory-constraints/pipesworld-metric-time-constraints | 0/5 | 0.00 |
+| features/trajectory-constraints/rovers-preferences-qualitative | 4/5 | 3.93 |
+| features/trajectory-constraints/trucks-preferences-complex | 2/5 | 1.56 |
+| features/typing/gripper-round-1-adl | 5/5 | 5.00 |
+| features/universal-preconditions/airport-nontemporal-adl | 2/5 | 2.00 |
+| features/universal-preconditions/promela-dining-philosophers-adl | 1/5 | 1.00 |
+| features/variable-duration/tpp-metric-time | 2/5 | 1.86 |
+| features/variable-duration/zenotravel-time-automatic | 5/5 | 4.73 |
+| features/warehouse/capacity | 1/7 | 1.00 |
+| features/warehouse/cells | 2/7 | 2.00 |
+| features/warehouse/free | 1/7 | 0.75 |
+| features/warehouse/time | 0/6 | 0.00 |
+| **total** | **298/450** | **275.27** |

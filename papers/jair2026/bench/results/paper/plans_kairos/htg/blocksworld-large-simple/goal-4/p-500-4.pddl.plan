@@ -1,0 +1,13 @@
+; cost = 12
+(pickup b3)
+(stack b3 b1)
+(pickup b2)
+(stack b2 b4)
+(pickup b5)
+(stack b5 b2)
+(unstack b3 b1)
+(putdown b3)
+(pickup b1)
+(stack b1 b5)
+(pickup b3)
+(stack b3 b1)
